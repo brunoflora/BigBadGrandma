@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="background-gameplay" sid="4562701392972133">
+        <layer name="background" sid="4562701392972133">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -167,11 +167,12 @@
                     <instance-variables>
                         <Direction></Direction>
                         <StatusLobo>Normal</StatusLobo>
+                        <Tempo>0</Tempo>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>200</max-speed>
+                                <max-speed>500</max-speed>
                                 <acceleration>500</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>4 directions</directions>
@@ -769,5 +770,19 @@
         </layer>
     </layers>
     <nonworld-instances />
-    <effects />
+    <effects>
+        <effect-type name="Pulse">
+            <effect id="pulse" />
+            <effect-instance type="Pulse">
+                <parameters>
+                    <center-x>0.5</center-x>
+                    <center-y>0.5</center-y>
+                    <frequency>25</frequency>
+                    <intensity>0.25</intensity>
+                    <lighting>0</lighting>
+                    <speed>5</speed>
+                </parameters>
+            </effect-instance>
+        </effect-type>
+    </effects>
 </c2layout>
