@@ -115,6 +115,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Direction" sid="2399018292567617" type="string" />
+                <instance-variable name="StatusLobo" sid="3432771434705255" type="string" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="8045335838618861">

@@ -166,6 +166,7 @@
                     </properties>
                     <instance-variables>
                         <Direction></Direction>
+                        <StatusLobo>Normal</StatusLobo>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -175,7 +176,7 @@
                                 <deceleration>500</deceleration>
                                 <directions>4 directions</directions>
                                 <set-angle>No</set-angle>
-                                <default-controls>Yes</default-controls>
+                                <default-controls>No</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
