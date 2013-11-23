@@ -940,10 +940,188 @@
         </event-group>
         <event-group description="" sid="7808370104234298" title="cogumelo">
             <sub-events>
+                <event-group description="" sid="4677533963555962" title="Alucinado">
+                    <sub-events>
+                        <event-block sid="1519130401099005">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="6422574703706279" type="System">
+                                    <param id="0" name="First value">lobo.StatusLobo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Normal&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-29" name="Set layout effect enabled" sid="4977447110188887" type="System">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;Pulse&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="7140420391102225">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="1125707488502889" type="Keyboard">
+                                            <param id="0" name="Key">40 (Down arrow)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="2857988880719612" type="lobo">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="5051547945133347">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="3510673434299469" type="Keyboard">
+                                            <param id="0" name="Key">38 (Up arrow)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="4363731302738877" type="lobo">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="7902542192573231">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="3245541679910194" type="Keyboard">
+                                            <param id="0" name="Key">37 (Left arrow)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="6225323020269232" type="lobo">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="9585729300176582">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="574458809944967" type="Keyboard">
+                                            <param id="0" name="Key">39 (Right arrow)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="6687711080572189" type="lobo">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="1046800972203377">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="2271251836562049" type="System">
+                                    <param id="0" name="First value">lobo.StatusLobo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Alucinado&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-29" name="Set layout effect enabled" sid="3528323434608844" type="System">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Pulse&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="9614111177472994">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="7655899618542863" type="Keyboard">
+                                            <param id="0" name="Key">40 (Down arrow)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="6080103381219818" type="lobo">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="9036812865163041">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="8153644608399518" type="Keyboard">
+                                            <param id="0" name="Key">38 (Up arrow)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="3984102442723062" type="lobo">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2329825784731048">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="2128906651551068" type="Keyboard">
+                                            <param id="0" name="Key">37 (Left arrow)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="3209930333907543" type="lobo">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2768527211560228">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="1677998052810294" type="Keyboard">
+                                            <param id="0" name="Key">39 (Right arrow)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="2596583546662422" type="lobo">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="4822766474759077">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="3775220948009347" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="1965310060654762" type="lobo">
+                                            <param id="0" name="Instance variable">Tempo</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="3751295620640977">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="902760614592203" type="System">
+                                            <param id="0" name="First value">lobo.Tempo</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">500</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="5095947826412085" type="lobo">
+                                            <param id="0" name="Instance variable">StatusLobo</param>
+                                            <param id="1" name="Value">&quot;Normal&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="2098741064547324" type="lobo">
+                                            <param id="0" name="Instance variable">Tempo</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="6596537710935815">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="9669232913069997" type="lobo">
+                                    <param id="0" name="Object">cogumelo</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="6092674715868676" type="lobo">
+                                    <param id="0" name="Instance variable">StatusLobo</param>
+                                    <param id="1" name="Value">&quot;Alucinado&quot;</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="8206113147369424" type="cogumelo" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-block sid="5022428552302158">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="1775683010010825" type="System">
-                            <param id="0" name="Interval (seconds)">1.0</param>
+                            <param id="0" name="Interval (seconds)">5.0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -958,7 +1136,7 @@
                         <event-block sid="6081223695364612">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="2837965589055393" type="System">
-                                    <param id="0" name="Interval (seconds)">2.0</param>
+                                    <param id="0" name="Interval (seconds)">5.0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1125,183 +1303,6 @@
                         <action id="4" name="Set animation" sid="2395866726497489" type="lobo">
                             <param id="0" name="Animation">&quot;loboe&quot;</param>
                             <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="4677533963555962" title="Alucinado">
-            <sub-events>
-                <event-block sid="1519130401099005">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="6422574703706279" type="System">
-                            <param id="0" name="First value">lobo.StatusLobo</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Normal&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-29" name="Set layout effect enabled" sid="4977447110188887" type="System">
-                            <param id="0" name="Mode">0</param>
-                            <param id="1" name="Effect">&quot;Pulse&quot;</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="7140420391102225">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="1125707488502889" type="Keyboard">
-                                    <param id="0" name="Key">40 (Down arrow)</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="2857988880719612" type="lobo">
-                                    <param id="0" name="Control">3</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="5051547945133347">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="3510673434299469" type="Keyboard">
-                                    <param id="0" name="Key">38 (Up arrow)</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="4363731302738877" type="lobo">
-                                    <param id="0" name="Control">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="7902542192573231">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="3245541679910194" type="Keyboard">
-                                    <param id="0" name="Key">37 (Left arrow)</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="6225323020269232" type="lobo">
-                                    <param id="0" name="Control">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="9585729300176582">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="574458809944967" type="Keyboard">
-                                    <param id="0" name="Key">39 (Right arrow)</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="6687711080572189" type="lobo">
-                                    <param id="0" name="Control">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="1046800972203377">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="2271251836562049" type="System">
-                            <param id="0" name="First value">lobo.StatusLobo</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Alucinado&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-29" name="Set layout effect enabled" sid="3528323434608844" type="System">
-                            <param id="0" name="Mode">1</param>
-                            <param id="1" name="Effect">&quot;Pulse&quot;</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="9614111177472994">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="7655899618542863" type="Keyboard">
-                                    <param id="0" name="Key">40 (Down arrow)</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="6080103381219818" type="lobo">
-                                    <param id="0" name="Control">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="9036812865163041">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="8153644608399518" type="Keyboard">
-                                    <param id="0" name="Key">38 (Up arrow)</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="3984102442723062" type="lobo">
-                                    <param id="0" name="Control">3</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="2329825784731048">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="2128906651551068" type="Keyboard">
-                                    <param id="0" name="Key">37 (Left arrow)</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="3209930333907543" type="lobo">
-                                    <param id="0" name="Control">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="2768527211560228">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="1677998052810294" type="Keyboard">
-                                    <param id="0" name="Key">39 (Right arrow)</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="2596583546662422" type="lobo">
-                                    <param id="0" name="Control">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="4822766474759077">
-                            <conditions>
-                                <condition id="-1" name="Every tick" sid="3775220948009347" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-11" name="Add to" sid="1965310060654762" type="lobo">
-                                    <param id="0" name="Instance variable">Tempo</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="3751295620640977">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="902760614592203" type="System">
-                                    <param id="0" name="First value">lobo.Tempo</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">500</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="5095947826412085" type="lobo">
-                                    <param id="0" name="Instance variable">StatusLobo</param>
-                                    <param id="1" name="Value">&quot;Normal&quot;</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="2098741064547324" type="lobo">
-                                    <param id="0" name="Instance variable">Tempo</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="6596537710935815">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="9669232913069997" type="lobo">
-                            <param id="0" name="Object">cogumelo</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="6092674715868676" type="lobo">
-                            <param id="0" name="Instance variable">StatusLobo</param>
-                            <param id="1" name="Value">&quot;Alucinado&quot;</param>
                         </action>
                     </actions>
                 </event-block>

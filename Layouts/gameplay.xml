@@ -172,7 +172,7 @@
                     <behavior-instances>
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>500</max-speed>
+                                <max-speed>200</max-speed>
                                 <acceleration>500</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>4 directions</directions>
