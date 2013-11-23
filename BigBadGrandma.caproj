@@ -22,9 +22,7 @@
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects>
-        <effect author="Scirra" id="bumpmapping">Bumpmapping</effect>
-    </used-effects>
+    <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -898,31 +896,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="uopa" sid="1696978488974028">
-            <plugin id="Sprite" />
-            <effects>
-                <effect-type name="Bumpmapping">
-                    <effect id="bumpmapping" />
-                </effect-type>
-            </effects>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7403837242013038" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.33913" y="0.52" />
-                            <point x="0.5" y="0.393333" />
-                            <point x="0.869565" y="0.2" />
-                            <point x="0.665217" y="0.5" />
-                            <point x="0.673913" y="0.5" />
-                            <point x="0.5" y="0.64" />
-                            <point x="0.0391304" y="0.94" />
-                            <point x="0.347826" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite" sid="5252698273809773">
+        <object-type name="touchUp" sid="5252698273809773">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6789847051053121" speed="5">
@@ -940,7 +914,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="6426642536758712">
+        <object-type name="touchRight" sid="6426642536758712">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7367371508752582" speed="5">
@@ -959,7 +933,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="3809924509208123">
+        <object-type name="touchDown" sid="3809924509208123">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7938317998864337" speed="5">
@@ -977,7 +951,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="904286187753148">
+        <object-type name="touchLeft" sid="904286187753148">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9478824816802246" speed="5">
@@ -995,7 +969,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite5" sid="6643124830309267">
+        <object-type name="touchAction" sid="6643124830309267">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1907964494308669" speed="5">
@@ -1014,7 +988,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite6" sid="4842742667148305">
+        <object-type name="Margin" sid="4842742667148305">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="6615626682107012">

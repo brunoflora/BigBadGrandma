@@ -3,9 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>gameplay</name>
     <events>
-        <event-group description="" sid="9591909944101965" title="lobo">
+        <event-group collapsed="1" description="" sid="9591909944101965" title="lobo">
             <sub-events>
-                <event-group description="" sid="6810845781910417" title="movimentacao">
+                <event-group collapsed="1" description="" sid="6810845781910417" title="movimentacao">
                     <sub-events>
                         <event-block sid="6195134299500762">
                             <conditions>
@@ -84,7 +84,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block breakpoint="1" sid="9082948028016856">
+                                <event-block sid="9082948028016856">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="898391294375587" type="lobo">
                                             <param id="0" name="Instance variable">Direction</param>
@@ -136,16 +136,9 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Right&quot;</param>
                                         </condition>
-                                        <condition id="2" name="Key is down" sid="5355521028135035" type="Keyboard">
-                                            <param id="0" name="Key">87 (W)</param>
-                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="4" name="Set animation" sid="9079574476354523" type="lobo">
-                                            <param id="0" name="Animation">&quot;lobod&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
-                                        <action id="4" name="Set animation" sid="8495845070881963" type="lobo">
                                             <param id="0" name="Animation">&quot;lobod&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
@@ -223,15 +216,15 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="8932799812515259" title="atalhos">
+                <event-group collapsed="1" description="" disabled="1" sid="8932799812515259" title="atalhos">
                     <sub-events>
-                        <event-block sid="788581582044614">
+                        <event-block collapsed="1" disabled="1" sid="788581582044614">
                             <conditions>
                                 <condition behavior="8Direction" id="0" name="Is moving" sid="3662912564366603" type="lobo" />
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="8448622653366754">
+                                <event-block disabled="1" sid="8448622653366754">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="7161252994905472" type="Keyboard">
                                             <param id="0" name="Key">87 (W)</param>
@@ -247,7 +240,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="2893621074998261">
+                                <event-block disabled="1" sid="2893621074998261">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="507060843958951" type="Keyboard">
                                             <param id="0" name="Key">65 (A)</param>
@@ -263,7 +256,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="2343070114563092">
+                                <event-block disabled="1" sid="2343070114563092">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="9397705008025699" type="Keyboard">
                                             <param id="0" name="Key">68 (D)</param>
@@ -279,7 +272,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="5783887560471997">
+                                <event-block disabled="1" sid="5783887560471997">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="8565315773669967" type="Keyboard">
                                             <param id="0" name="Key">83 (S)</param>
@@ -297,13 +290,13 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="1401183934002604">
+                        <event-block collapsed="1" disabled="1" sid="1401183934002604">
                             <conditions>
                                 <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="5395882560091967" type="lobo" />
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="2488725040248354">
+                                <event-block disabled="1" sid="2488725040248354">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="4083424292228508" type="Keyboard">
                                             <param id="0" name="Key">87 (W)</param>
@@ -319,7 +312,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="8346672660228264">
+                                <event-block disabled="1" sid="8346672660228264">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="5644883156403361" type="Keyboard">
                                             <param id="0" name="Key">65 (A)</param>
@@ -335,7 +328,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="4756432537661648">
+                                <event-block disabled="1" sid="4756432537661648">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="3718219695736768" type="Keyboard">
                                             <param id="0" name="Key">68 (D)</param>
@@ -351,7 +344,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="2447893829186259">
+                                <event-block disabled="1" sid="2447893829186259">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="6085765053652959" type="Keyboard">
                                             <param id="0" name="Key">83 (S)</param>
@@ -371,32 +364,24 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-            </sub-events>
-        </event-group>
-        <event-group collapsed="1" description="" disabled="1" sid="9892087883965252" title="vovo">
-            <sub-events>
-                <event-block disabled="1" sid="1900971624317903">
+                <event-block sid="1357245956017919">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="6709252195720405" type="vovo">
-                            <param id="0" name="Object">lobo</param>
+                        <condition id="0" name="On collision with another object" sid="6253129283780105" type="lobo">
+                            <param id="0" name="Object">vovo</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="2714263505759571" type="lobo">
-                            <param id="0" name="Input">1</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="4655635305935412" type="vovo">
-                            <param id="0" name="Object">uopa</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="3023019890846743" type="uopa" />
+                        <action behavior="8Direction" id="1" name="Reverse" sid="2949801381336083" type="vovo" />
                     </actions>
                 </event-block>
-                <event-group description="" disabled="1" sid="2965454720712087" title="ai">
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="9892087883965252" title="vovo">
+            <sub-events>
+                <event-group description="" sid="2965454720712087" title="ai">
                     <sub-events>
                         <variable constant="0" name="vovoSpeed" sid="3833418623289465" static="0" type="number">100</variable>
-                        <event-block disabled="1" sid="3145310491282811">
+                        <event-block sid="3145310491282811">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="8372229260228609" type="System">
                                     <param id="0" name="First value">vovo.Tesao</param>
@@ -406,13 +391,13 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block disabled="1" sid="2216684280365489">
+                                <event-block sid="2216684280365489">
                                     <conditions>
                                         <condition id="-1" name="Every tick" sid="7233241903035178" type="System" />
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block collapsed="1" disabled="1" sid="8584801617068186">
+                                        <event-block collapsed="1" sid="8584801617068186">
                                             <conditions>
                                                 <condition id="-8" inverted="1" name="Compare two values" sid="5703564965718537" type="System">
                                                     <param id="0" name="First value">floor(vovo.Y)</param>
@@ -422,7 +407,7 @@
                                             </conditions>
                                             <actions />
                                             <sub-events>
-                                                <event-block disabled="1" sid="2818206741287733">
+                                                <event-block sid="2818206741287733">
                                                     <conditions>
                                                         <condition id="-8" name="Compare two values" sid="7550213488024466" type="System">
                                                             <param id="0" name="First value">vovo.Y</param>
@@ -440,7 +425,7 @@
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block disabled="1" sid="734667102351809">
+                                                <event-block sid="734667102351809">
                                                     <conditions>
                                                         <condition id="-8" name="Compare two values" sid="5130460890179579" type="System">
                                                             <param id="0" name="First value">vovo.Y</param>
@@ -460,7 +445,7 @@
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
-                                        <event-block collapsed="1" disabled="1" sid="6867558970484746">
+                                        <event-block collapsed="1" sid="6867558970484746">
                                             <conditions>
                                                 <condition id="-8" inverted="1" name="Compare two values" sid="3781372716004383" type="System">
                                                     <param id="0" name="First value">floor(vovo.X)</param>
@@ -470,7 +455,7 @@
                                             </conditions>
                                             <actions />
                                             <sub-events>
-                                                <event-block disabled="1" sid="1304537935697489">
+                                                <event-block sid="1304537935697489">
                                                     <conditions>
                                                         <condition id="-8" name="Compare two values" sid="6455044043948835" type="System">
                                                             <param id="0" name="First value">vovo.X</param>
@@ -488,7 +473,7 @@
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block disabled="1" sid="9290489197497758">
+                                                <event-block sid="9290489197497758">
                                                     <conditions>
                                                         <condition id="-8" name="Compare two values" sid="8842306892543712" type="System">
                                                             <param id="0" name="First value">vovo.X</param>
@@ -508,7 +493,7 @@
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
-                                        <event-block disabled="1" sid="1964114778946174">
+                                        <event-block sid="1964114778946174">
                                             <conditions>
                                                 <condition id="-8" name="Compare two values" sid="6638607451381168" type="System">
                                                     <param id="0" name="First value">floor(vovo.Y)</param>
@@ -522,7 +507,7 @@
                                                 </action>
                                             </actions>
                                         </event-block>
-                                        <event-block disabled="1" sid="7122953822767068">
+                                        <event-block sid="7122953822767068">
                                             <conditions>
                                                 <condition id="-8" name="Compare two values" sid="5770740103962607" type="System">
                                                     <param id="0" name="First value">floor(vovo.X)</param>
@@ -540,7 +525,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block disabled="1" sid="8940388022043759">
+                        <event-block sid="8940388022043759">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="4188405485289417" type="System">
                                     <param id="0" name="First value">vovo.Tesao</param>
@@ -550,7 +535,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block disabled="1" sid="5062422867119339">
+                                <event-block sid="5062422867119339">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="9314782576608295" type="System">
                                             <param id="0" name="First value">vovo.Y</param>
@@ -564,7 +549,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="2593714375268834">
+                                <event-block sid="2593714375268834">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="2894284194893824" type="System">
                                             <param id="0" name="First value">vovo.Y</param>
@@ -578,7 +563,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="7755842461066228">
+                                <event-block sid="7755842461066228">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="2493602093453033" type="System">
                                             <param id="0" name="First value">vovo.X</param>
@@ -592,7 +577,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="3853187153180801">
+                                <event-block sid="3853187153180801">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="6268439293890492" type="System">
                                             <param id="0" name="First value">vovo.X</param>
@@ -606,7 +591,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="2495197817967395">
+                                <event-block sid="2495197817967395">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="2101664863829869" type="System">
                                             <param id="0" name="First value">vovo.Y</param>
@@ -625,7 +610,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="3190295768895479">
+                                <event-block sid="3190295768895479">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="6913165612971448" type="System">
                                             <param id="0" name="First value">vovo.X</param>
@@ -646,7 +631,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block disabled="1" sid="5451443370522223">
+                        <event-block sid="5451443370522223">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="325239409364629" type="vovo">
                                     <param id="0" name="Object">lobo</param>
@@ -659,7 +644,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1" sid="7457766603960357">
+                        <event-block sid="7457766603960357">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="6844932715602122" type="System">
                                     <param id="0" name="First value">vovo.Sentido</param>
@@ -674,7 +659,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1" sid="7953320261699763">
+                        <event-block sid="7953320261699763">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="4756484386097795" type="System">
                                     <param id="0" name="First value">vovo.Sentido</param>
@@ -689,7 +674,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1" sid="819913831038078">
+                        <event-block sid="819913831038078">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="1373579500208538" type="System">
                                     <param id="0" name="First value">vovo.Sentido</param>
@@ -704,7 +689,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1" sid="6874590843212903">
+                        <event-block sid="6874590843212903">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="933578743768788" type="System">
                                     <param id="0" name="First value">vovo.Sentido</param>
@@ -719,13 +704,23 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="7096777768339951">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="317411215212519" type="vovo">
+                                    <param id="0" name="Object">lobo</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="1" name="Reverse" sid="7641756823198913" type="lobo" />
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" disabled="1" sid="7979352537898816" title="maca">
+        <event-group collapsed="1" description="" sid="7979352537898816" title="maca">
             <sub-events>
-                <event-block disabled="1" sid="8102724334789717">
+                <event-block sid="8102724334789717">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="6421382740284917" type="lobo">
                             <param id="0" name="Object">maca</param>
@@ -739,7 +734,7 @@
                         <action id="-9" name="Destroy" sid="7107415544316979" type="maca" />
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="6004855176759837">
+                <event-block sid="6004855176759837">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="6077993041897537" type="System" />
                     </conditions>
@@ -749,7 +744,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="8806142618400488">
+                <event-block sid="8806142618400488">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="1850075440861579" type="System">
                             <param id="0" name="Interval (seconds)">1.5</param>
@@ -764,7 +759,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block disabled="1" sid="5553136029814463">
+                        <event-block sid="5553136029814463">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="854118781974909" type="System">
                                     <param id="0" name="Interval (seconds)">5.0</param>
@@ -778,9 +773,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" disabled="1" sid="8060990449276904" title="avela">
+        <event-group collapsed="1" description="" sid="8060990449276904" title="avela">
             <sub-events>
-                <event-block disabled="1" sid="7065112436800626">
+                <event-block sid="7065112436800626">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="2880640000507269" type="lobo">
                             <param id="0" name="Object">avela</param>
@@ -794,7 +789,7 @@
                         <action id="-9" name="Destroy" sid="7126210942262271" type="avela" />
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="2260782191076577">
+                <event-block sid="2260782191076577">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="860236161226411" type="System" />
                     </conditions>
@@ -804,7 +799,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="2140755315325584">
+                <event-block sid="2140755315325584">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="6249496714712241" type="System">
                             <param id="0" name="Interval (seconds)">2.5</param>
@@ -819,7 +814,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block disabled="1" sid="2068103999778439">
+                        <event-block sid="2068103999778439">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="9528964478169445" type="System">
                                     <param id="0" name="Interval (seconds)">5.0</param>
@@ -833,9 +828,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" disabled="1" sid="4630967811662486" title="mel">
+        <event-group collapsed="1" description="" sid="4630967811662486" title="mel">
             <sub-events>
-                <event-block disabled="1" sid="4030881018829371">
+                <event-block sid="4030881018829371">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="7021529598068755" type="lobo">
                             <param id="0" name="Object">mel</param>
@@ -849,7 +844,7 @@
                         <action id="-9" name="Destroy" sid="3068194191227916" type="mel" />
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="4095981498371909">
+                <event-block sid="4095981498371909">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="784381984532222" type="System" />
                     </conditions>
@@ -859,7 +854,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="2793587708620474">
+                <event-block sid="2793587708620474">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="6307667049641503" type="System">
                             <param id="0" name="Interval (seconds)">3.5</param>
@@ -874,7 +869,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block disabled="1" sid="9634956380531529">
+                        <event-block sid="9634956380531529">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="569842494520392" type="System">
                                     <param id="0" name="Interval (seconds)">5.0</param>
@@ -888,9 +883,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" disabled="1" sid="9062624244019905" title="chocolate">
+        <event-group collapsed="1" description="" sid="9062624244019905" title="chocolate">
             <sub-events>
-                <event-block disabled="1" sid="8857630853974725">
+                <event-block sid="8857630853974725">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="3537286167445028" type="lobo">
                             <param id="0" name="Object">chocolate</param>
@@ -904,7 +899,7 @@
                         <action id="-9" name="Destroy" sid="9011343882600186" type="chocolate" />
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="2815722103036936">
+                <event-block sid="2815722103036936">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="5049095493181743" type="System" />
                     </conditions>
@@ -914,10 +909,10 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="9290079085091501">
+                <event-block sid="9290079085091501">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="8158620172907388" type="System">
-                            <param id="0" name="Interval (seconds)">25.0</param>
+                            <param id="0" name="Interval (seconds)">5.0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -929,7 +924,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block disabled="1" sid="6688857305906438">
+                        <event-block sid="6688857305906438">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="1278901709554671" type="System">
                                     <param id="0" name="Interval (seconds)">2.5</param>
@@ -972,17 +967,6 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block disabled="1" sid="3764147036317593">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="4361261507478065" type="cogu">
-                            <param id="0" name="Object">lobo</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="137166201720075" type="cogumelo" />
-                        <action behavior="8Direction" id="1" name="Reverse" sid="4192665129637137" type="lobo" />
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
         <event-group collapsed="1" description="" disabled="1" sid="4366391207591225" title="coco">
@@ -1013,19 +997,6 @@
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block disabled="1" sid="2854585126152985">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="1639711590464876" type="cocos">
-                            <param id="0" name="Object">lobo</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="8628038063045345" type="coco" />
-                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="5970180483658949" type="lobo">
-                            <param id="0" name="Input">1</param>
-                        </action>
-                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -1096,7 +1067,7 @@
                 <event-block disabled="1" sid="6879489736132357">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="2083319082575538" type="Touch">
-                            <param id="0" name="Object">Sprite</param>
+                            <param id="0" name="Object">touchUp</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1112,7 +1083,7 @@
                 <event-block disabled="1" sid="3335352522995835">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="8292233370822549" type="Touch">
-                            <param id="0" name="Object">Sprite2</param>
+                            <param id="0" name="Object">touchRight</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1128,7 +1099,7 @@
                 <event-block disabled="1" sid="8462408698771541">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="6752467561590678" type="Touch">
-                            <param id="0" name="Object">Sprite3</param>
+                            <param id="0" name="Object">touchDown</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1144,7 +1115,7 @@
                 <event-block disabled="1" sid="7224155444776466">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="7151253895323697" type="Touch">
-                            <param id="0" name="Object">Sprite4</param>
+                            <param id="0" name="Object">touchLeft</param>
                         </condition>
                     </conditions>
                     <actions>
