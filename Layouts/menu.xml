@@ -49,6 +49,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Intro" uid="21">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>478</x>
+                        <y>467</y>
+                        <z>0</z>
+                        <width>860.377807617</width>
+                        <height>688.302246094</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -76,7 +98,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1129</x>
+                        <x>1099</x>
                         <y>660</y>
                         <z>0</z>
                         <width>224</width>
@@ -98,7 +120,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1129</x>
+                        <x>1099</x>
                         <y>798</y>
                         <z>0</z>
                         <width>220</width>
@@ -120,7 +142,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1126</x>
+                        <x>1096</x>
                         <y>939</y>
                         <z>0</z>
                         <width>220</width>

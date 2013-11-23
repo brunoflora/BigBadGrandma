@@ -3,17 +3,45 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>levels</name>
     <events>
-        <event-block sid="2243098917858837">
+        <event-block sid="8403279040232748">
             <conditions>
-                <condition id="6" name="On object clicked" sid="2622019178450336" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">startgame</param>
+                <condition id="7" name="Cursor is over object" sid="3272095903157133" type="Mouse">
+                    <param id="0" name="Object">startgame</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="8972171853499343" type="System">
-                    <param id="0" name="Layout">gameplay</param>
+                <action id="4" name="Set animation" sid="8273967519037918" type="startgame">
+                    <param id="0" name="Animation">&quot;start2&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8584259342318382">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="1824305762258476" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">startgame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="3979143265935539" type="System">
+                            <param id="0" name="Layout">gameplay</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7202146434159939">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="3990925797814699" type="Mouse">
+                    <param id="0" name="Object">startgame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7238940682797749" type="startgame">
+                    <param id="0" name="Animation">&quot;start1&quot;</param>
+                    <param id="1" name="From">0</param>
                 </action>
             </actions>
         </event-block>
