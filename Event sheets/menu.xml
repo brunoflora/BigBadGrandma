@@ -45,5 +45,57 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="5285224803251807">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="7590784842890951" type="Mouse">
+                    <param id="0" name="Object">option</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8975457709141557" type="option">
+                    <param id="0" name="Animation">&quot;option2&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3391898864622041">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="4419326111320604" type="Mouse">
+                    <param id="0" name="Object">option</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9943999977155317" type="option">
+                    <param id="0" name="Animation">&quot;option1&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9808622813930512">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9831465465063044" type="Mouse">
+                    <param id="0" name="Object">quit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="657995741133223" type="quit">
+                    <param id="0" name="Animation">&quot;quit2&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9501555108474457">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="5109031218047147" type="Mouse">
+                    <param id="0" name="Object">quit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7666096266087547" type="quit">
+                    <param id="0" name="Animation">&quot;quit1&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
