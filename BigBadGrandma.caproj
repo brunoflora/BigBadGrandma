@@ -688,10 +688,7 @@
         <object-type name="cena1" sid="67290636090783">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
-                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="5" repeatto="0" sid="1711016088247059" speed="0.1">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="5" repeatto="0" sid="1711016088247059" speed="0.1">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -1022,39 +1019,8 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="familyCogu" sid="8645473509390241">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="Cogumelo" sid="635658119241674" type="string" />
-            </instance-variables>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5154595026061771" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
     </object-folder>
     <families>
-        <family name="nuts" plugin-id="Sprite" sid="5877977282622132">
-            <members>
-                <member>Avela</member>
-            </members>
-        </family>
-        <family name="honey" plugin-id="Sprite" sid="2162047432771408">
-            <members>
-                <member>Mel</member>
-            </members>
-        </family>
-        <family name="choco" plugin-id="Sprite" sid="1255527372398958">
-            <members>
-                <member>chocolate</member>
-            </members>
-        </family>
-        <family name="cogu" plugin-id="Sprite" sid="2087436700338429">
-            <members>
-                <member>cogumelo</member>
-            </members>
-        </family>
         <family name="cocos" plugin-id="Sprite" sid="2269873864759446">
             <members>
                 <member>coco</member>

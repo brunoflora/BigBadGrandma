@@ -20,10 +20,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="0" name="nuts" />
-        <family expanded="0" name="honey" />
-        <family expanded="0" name="choco" />
-        <family expanded="0" name="cogu" />
         <family expanded="0" name="cocos" />
         <family expanded="0" name="luvas" />
         <family expanded="0" name="stroball" />
@@ -31,6 +27,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="famAvela" />
         <family expanded="0" name="famMel" />
         <family expanded="0" name="famChoco" />
-        <family expanded="1" name="famCogu" />
+        <family expanded="0" name="famCogu" />
     </families-expanded>
 </c2uistate>
