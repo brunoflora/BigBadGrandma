@@ -344,198 +344,194 @@
         </event-group>
         <event-group description="" sid="9892087883965252" title="vovo">
             <sub-events>
-                <event-group description="" sid="2965454720712087" title="ai">
+                <event-block sid="5451443370522223">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="325239409364629" type="vovo">
+                            <param id="0" name="Object">lobo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="2039303938332303" type="vovo">
+                            <param id="0" name="Instance variable">Tesao</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action disabled="1" id="0" name="Spawn another object" sid="8313036881274244" type="vovo">
+                            <param id="0" name="Object">Explosion</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action disabled="1" id="-9" name="Destroy" sid="1504211392135467" type="vovo" />
+                    </actions>
                     <sub-events>
-                        <event-block sid="5451443370522223">
+                        <event-block sid="9544663541630678">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="325239409364629" type="vovo">
-                                    <param id="0" name="Object">lobo</param>
+                                <condition id="-10" name="For" sid="3843421091809861" type="System">
+                                    <param id="0" name="Name">&quot;espalhaMaca&quot;</param>
+                                    <param id="1" name="Start index">pontodamaca.Maca</param>
+                                    <param id="2" name="End index">1</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-13" name="Set boolean" sid="2039303938332303" type="vovo">
-                                    <param id="0" name="Instance variable">Tesao</param>
-                                    <param id="1" name="Value">0</param>
+                                <action id="-3" name="Create object" sid="4501802238228733" type="System">
+                                    <param id="0" name="Object to create">maca</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">random(lobo.X-100,lobo.X+100)</param>
+                                    <param id="3" name="Y">random(lobo.Y+100,lobo.Y+100)</param>
                                 </action>
-                                <action disabled="1" id="0" name="Spawn another object" sid="8313036881274244" type="vovo">
-                                    <param id="0" name="Object">Explosion</param>
-                                    <param id="1" name="Layer">1</param>
-                                    <param id="2" name="Image point">0</param>
-                                </action>
-                                <action disabled="1" id="-9" name="Destroy" sid="1504211392135467" type="vovo" />
-                            </actions>
-                            <sub-events>
-                                <event-block sid="9544663541630678">
-                                    <conditions>
-                                        <condition id="-10" name="For" sid="3843421091809861" type="System">
-                                            <param id="0" name="Name">&quot;espalhaMaca&quot;</param>
-                                            <param id="1" name="Start index">pontodamaca.Maca</param>
-                                            <param id="2" name="End index">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="4501802238228733" type="System">
-                                            <param id="0" name="Object to create">maca</param>
-                                            <param id="1" name="Layer">2</param>
-                                            <param id="2" name="X">random(lobo.X-100,lobo.X+100)</param>
-                                            <param id="3" name="Y">random(lobo.Y+100,lobo.Y+100)</param>
-                                        </action>
-                                        <action id="-12" name="Subtract from" sid="3326645062936723" type="pontodamaca">
-                                            <param id="0" name="Instance variable">Maca</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="3145310491282811">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="8372229260228609" type="System">
-                                    <param id="0" name="First value">vovo.Tesao</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">1.0</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="2364612778355473">
-                                    <conditions>
-                                        <condition id="-6" name="Every X seconds" sid="1598693300587839" type="System">
-                                            <param id="0" name="Interval (seconds)">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="Pathfinding" id="0" name="Find path" sid="6821392747009034" type="vovo">
-                                            <param id="0" name="X">lobo.X</param>
-                                            <param id="1" name="Y">lobo.Y</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="3476838094271458">
-                                    <conditions>
-                                        <condition behavior="Pathfinding" id="0" name="On path found" sid="8992358075655426" type="vovo" />
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="Pathfinding" id="1" name="Move along path" sid="2343234206771958" type="vovo" />
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="8940388022043759">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="4188405485289417" type="System">
-                                    <param id="0" name="First value">vovo.Tesao</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="9329981379721208">
-                                    <conditions>
-                                        <condition id="-6" name="Every X seconds" sid="5437197800128925" type="System">
-                                            <param id="0" name="Interval (seconds)">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="Pathfinding" id="0" name="Find path" sid="4449563921711254" type="vovo">
-                                            <param id="0" name="X">vovoCasa.X</param>
-                                            <param id="1" name="Y">vovoCasa.Y</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="5443241794989838">
-                                    <conditions>
-                                        <condition behavior="Pathfinding" id="0" name="On path found" sid="6751234318273186" type="vovo" />
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="Pathfinding" id="1" name="Move along path" sid="494193739572323" type="vovo" />
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="819913831038078">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="1373579500208538" type="System">
-                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">255</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="1672396774062571" type="System">
-                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">135</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="4293831346109791" type="vovo">
-                                    <param id="0" name="Animation">&quot;vovoe&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="2496823096180996">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="1078555062417476" type="System">
-                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">225</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="5532566199101692" type="System">
-                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">315</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="9241707768186509" type="vovo">
-                                    <param id="0" name="Animation">&quot;vovot&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="9740329191197595">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="869052631972583" type="System">
-                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">315</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="9326791784759484" type="System">
-                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">380</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="6216239557057656" type="vovo">
-                                    <param id="0" name="Animation">&quot;vovod&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="6423942046021609">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="115736093399796" type="System">
-                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">135</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="6152663154775917" type="System">
-                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">45</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="318985523549183" type="vovo">
-                                    <param id="0" name="Animation">&quot;vovob&quot;</param>
-                                    <param id="1" name="From">1</param>
+                                <action id="-12" name="Subtract from" sid="3326645062936723" type="pontodamaca">
+                                    <param id="0" name="Instance variable">Maca</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-group>
+                </event-block>
+                <event-block sid="3145310491282811">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8372229260228609" type="System">
+                            <param id="0" name="First value">vovo.Tesao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2364612778355473">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="1598693300587839" type="System">
+                                    <param id="0" name="Interval (seconds)">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="0" name="Find path" sid="6821392747009034" type="vovo">
+                                    <param id="0" name="X">lobo.X</param>
+                                    <param id="1" name="Y">lobo.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3476838094271458">
+                            <conditions>
+                                <condition behavior="Pathfinding" id="0" name="On path found" sid="8992358075655426" type="vovo" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="1" name="Move along path" sid="2343234206771958" type="vovo" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8940388022043759">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4188405485289417" type="System">
+                            <param id="0" name="First value">vovo.Tesao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9329981379721208">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="5437197800128925" type="System">
+                                    <param id="0" name="Interval (seconds)">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="0" name="Find path" sid="4449563921711254" type="vovo">
+                                    <param id="0" name="X">vovoCasa.X</param>
+                                    <param id="1" name="Y">vovoCasa.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5443241794989838">
+                            <conditions>
+                                <condition behavior="Pathfinding" id="0" name="On path found" sid="6751234318273186" type="vovo" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="1" name="Move along path" sid="494193739572323" type="vovo" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="819913831038078">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="1373579500208538" type="System">
+                            <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">255</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="1672396774062571" type="System">
+                            <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">135</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4293831346109791" type="vovo">
+                            <param id="0" name="Animation">&quot;vovoe&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2496823096180996">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="1078555062417476" type="System">
+                            <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">225</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="5532566199101692" type="System">
+                            <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">315</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9241707768186509" type="vovo">
+                            <param id="0" name="Animation">&quot;vovot&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9740329191197595">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="869052631972583" type="System">
+                            <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">315</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="9326791784759484" type="System">
+                            <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">380</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6216239557057656" type="vovo">
+                            <param id="0" name="Animation">&quot;vovod&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6423942046021609">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="115736093399796" type="System">
+                            <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">135</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="6152663154775917" type="System">
+                            <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">45</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="318985523549183" type="vovo">
+                            <param id="0" name="Animation">&quot;vovob&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="7979352537898816" title="maca">
