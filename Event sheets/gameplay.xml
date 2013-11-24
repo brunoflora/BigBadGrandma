@@ -578,7 +578,7 @@
                         <event-block sid="5553136029814463">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="854118781974909" type="System">
-                                    <param id="0" name="Interval (seconds)">5.0</param>
+                                    <param id="0" name="Interval (seconds)">6.0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -589,23 +589,23 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" disabled="1" sid="8060990449276904" title="avela">
+        <event-group description="" sid="8060990449276904" title="avela">
             <sub-events>
-                <event-block disabled="1" sid="7065112436800626">
+                <event-block sid="7065112436800626">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="2880640000507269" type="lobo">
-                            <param id="0" name="Object">avela</param>
+                            <param id="0" name="Object">famAvela</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-11" name="Add to" sid="9022190540930989" type="pontodaavela">
                             <param id="0" name="Instance variable">Avela</param>
-                            <param id="1" name="Value">20</param>
+                            <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="7126210942262271" type="avela" />
+                        <action id="-9" name="Destroy" sid="7126210942262271" type="famAvela" />
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="2260782191076577">
+                <event-block sid="2260782191076577">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="860236161226411" type="System" />
                     </conditions>
@@ -615,10 +615,10 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="2140755315325584">
+                <event-block sid="2140755315325584">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="6249496714712241" type="System">
-                            <param id="0" name="Interval (seconds)">2.5</param>
+                            <param id="0" name="Interval (seconds)">2.0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -630,37 +630,37 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block disabled="1" sid="2068103999778439">
+                        <event-block sid="2068103999778439">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="9528964478169445" type="System">
                                     <param id="0" name="Interval (seconds)">5.0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="4318346069167409" type="avela" />
+                                <action id="-9" name="Destroy" sid="4318346069167409" type="famAvela" />
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" disabled="1" sid="4630967811662486" title="mel">
+        <event-group description="" sid="4630967811662486" title="mel">
             <sub-events>
-                <event-block disabled="1" sid="4030881018829371">
+                <event-block sid="4030881018829371">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="7021529598068755" type="lobo">
-                            <param id="0" name="Object">mel</param>
+                            <param id="0" name="Object">famMel</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-11" name="Add to" sid="5081827863671238" type="pontodomel">
                             <param id="0" name="Instance variable">Mel</param>
-                            <param id="1" name="Value">30</param>
+                            <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="3068194191227916" type="mel" />
+                        <action id="-9" name="Destroy" sid="3068194191227916" type="famMel" />
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="4095981498371909">
+                <event-block sid="4095981498371909">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="784381984532222" type="System" />
                     </conditions>
@@ -670,41 +670,41 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="2793587708620474">
+                <event-block sid="2793587708620474">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="6307667049641503" type="System">
-                            <param id="0" name="Interval (seconds)">3.5</param>
+                            <param id="0" name="Interval (seconds)">2.5</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="5271036722173157" type="System">
-                            <param id="0" name="Object to create">honey</param>
+                            <param id="0" name="Object to create">famMel</param>
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">random(30,1250)</param>
                             <param id="3" name="Y">random(424,824)</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block disabled="1" sid="9634956380531529">
+                        <event-block sid="9634956380531529">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="569842494520392" type="System">
-                                    <param id="0" name="Interval (seconds)">5.0</param>
+                                    <param id="0" name="Interval (seconds)">4.0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="2375106333233009" type="mel" />
+                                <action id="-9" name="Destroy" sid="2375106333233009" type="famMel" />
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" disabled="1" sid="9062624244019905" title="chocolate">
+        <event-group description="" sid="9062624244019905" title="chocolate">
             <sub-events>
-                <event-block disabled="1" sid="8857630853974725">
+                <event-block sid="8857630853974725">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="3537286167445028" type="lobo">
-                            <param id="0" name="Object">chocolate</param>
+                            <param id="0" name="Object">famChoco</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -712,10 +712,10 @@
                             <param id="0" name="Instance variable">Chocolate</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="9011343882600186" type="chocolate" />
+                        <action id="-9" name="Destroy" sid="9011343882600186" type="famChoco" />
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="2815722103036936">
+                <event-block sid="2815722103036936">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="5049095493181743" type="System" />
                     </conditions>
@@ -725,29 +725,29 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="9290079085091501">
+                <event-block sid="9290079085091501">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="8158620172907388" type="System">
-                            <param id="0" name="Interval (seconds)">5.0</param>
+                            <param id="0" name="Interval (seconds)">1.0</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="87819977119026" type="System">
-                            <param id="0" name="Object to create">choco</param>
+                            <param id="0" name="Object to create">famChoco</param>
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">random(30,1250)</param>
                             <param id="3" name="Y">random(424,824)</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block disabled="1" sid="6688857305906438">
+                        <event-block sid="6688857305906438">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="1278901709554671" type="System">
-                                    <param id="0" name="Interval (seconds)">2.5</param>
+                                    <param id="0" name="Interval (seconds)">3.0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="9533644255503823" type="chocolate" />
+                                <action id="-9" name="Destroy" sid="9533644255503823" type="famChoco" />
                             </actions>
                         </event-block>
                     </sub-events>

@@ -1022,13 +1022,16 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="familyChoco" sid="1807976472847234">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6665038642373927" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
-        <family name="apple" plugin-id="Sprite" sid="9960626682189126">
-            <members>
-                <member>maca</member>
-            </members>
-        </family>
         <family name="nuts" plugin-id="Sprite" sid="5877977282622132">
             <members>
                 <member>avela</member>
@@ -1067,6 +1070,21 @@
         <family name="famMaca" plugin-id="Sprite" sid="2219217213509036">
             <members>
                 <member>maca</member>
+            </members>
+        </family>
+        <family name="famAvela" plugin-id="Sprite" sid="4694359813216773">
+            <members>
+                <member>avela</member>
+            </members>
+        </family>
+        <family name="famMel" plugin-id="Sprite" sid="9842750357828237">
+            <members>
+                <member>mel</member>
+            </members>
+        </family>
+        <family name="famChoco" plugin-id="Sprite" sid="382267923052112">
+            <members>
+                <member>chocolate</member>
             </members>
         </family>
     </families>
