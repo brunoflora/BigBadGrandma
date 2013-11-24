@@ -1062,14 +1062,14 @@
             </members>
         </family>
     </families>
-    <layout-folder expanded="0">
+    <layout-folder expanded="1">
         <layout>intro.xml</layout>
         <layout>story.xml</layout>
         <layout>menu.xml</layout>
         <layout>levels.xml</layout>
         <layout>gameplay.xml</layout>
     </layout-folder>
-    <event-folder expanded="0">
+    <event-folder expanded="1">
         <event-sheet>intro.xml</event-sheet>
         <event-sheet>story.xml</event-sheet>
         <event-sheet>menu.xml</event-sheet>
