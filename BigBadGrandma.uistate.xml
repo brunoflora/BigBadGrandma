@@ -30,6 +30,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="famMaca" />
         <family expanded="0" name="famAvela" />
         <family expanded="0" name="famMel" />
-        <family expanded="1" name="famChoco" />
+        <family expanded="0" name="famChoco" />
+        <family expanded="1" name="famCogu" />
     </families-expanded>
 </c2uistate>

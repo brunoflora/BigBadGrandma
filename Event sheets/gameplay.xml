@@ -5,7 +5,7 @@
     <events>
         <event-group collapsed="1" description="" sid="9591909944101965" title="lobo">
             <sub-events>
-                <event-group collapsed="1" description="" sid="6810845781910417" title="movimentacao">
+                <event-group description="" sid="6810845781910417" title="movimentacao">
                     <sub-events>
                         <event-block sid="6195134299500762">
                             <conditions>
@@ -216,9 +216,9 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="" sid="8932799812515259" title="atalhos">
+                <event-group description="" sid="8932799812515259" title="atalhos">
                     <sub-events>
-                        <event-block collapsed="1" sid="788581582044614">
+                        <event-block sid="788581582044614">
                             <conditions>
                                 <condition behavior="8Direction" id="0" name="Is moving" sid="3662912564366603" type="lobo" />
                             </conditions>
@@ -274,7 +274,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block collapsed="1" sid="1401183934002604">
+                        <event-block sid="1401183934002604">
                             <conditions>
                                 <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="5395882560091967" type="lobo" />
                             </conditions>
@@ -342,7 +342,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="9892087883965252" title="vovo">
+        <event-group collapsed="1" description="" sid="9892087883965252" title="vovo">
             <sub-events>
                 <event-block sid="5451443370522223">
                     <conditions>
@@ -381,6 +381,48 @@
                                 <action id="-12" name="Subtract from" sid="3326645062936723" type="pontodamaca">
                                     <param id="0" name="Instance variable">Maca</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3344320744953731">
+                            <conditions>
+                                <condition id="-10" name="For" sid="2577100427945536" type="System">
+                                    <param id="0" name="Name">&quot;espalhaAvela&quot;</param>
+                                    <param id="1" name="Start index">pontodaavela.Avela</param>
+                                    <param id="2" name="End index">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="4281948667200322" type="System">
+                                    <param id="0" name="Object to create">famAvela</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">random(lobo.X-100,lobo.X+100)</param>
+                                    <param id="3" name="Y">random(lobo.Y+100,lobo.Y+100)</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="1380531812356214" type="pontodaavela">
+                                    <param id="0" name="Instance variable">Avela</param>
+                                    <param id="1" name="Value">pontodaavela.Avela</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4686338693084496">
+                            <conditions>
+                                <condition id="-10" name="For" sid="883977409259668" type="System">
+                                    <param id="0" name="Name">&quot;espalhaMel&quot;</param>
+                                    <param id="1" name="Start index">pontodomel.Mel</param>
+                                    <param id="2" name="End index">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="5995195261147974" type="System">
+                                    <param id="0" name="Object to create">famMel</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">random(lobo.X-100,lobo.X+100)</param>
+                                    <param id="3" name="Y">random(lobo.Y+100,lobo.Y+100)</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="2183328748795886" type="pontodomel">
+                                    <param id="0" name="Instance variable">Mel</param>
+                                    <param id="1" name="Value">pontodomel.Mel</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -534,7 +576,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="7979352537898816" title="maca">
+        <event-group collapsed="1" description="" sid="7979352537898816" title="maca">
             <sub-events>
                 <event-block sid="8102724334789717">
                     <conditions>
@@ -589,7 +631,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="8060990449276904" title="avela">
+        <event-group collapsed="1" description="" sid="8060990449276904" title="avela">
             <sub-events>
                 <event-block sid="7065112436800626">
                     <conditions>
@@ -644,7 +686,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="4630967811662486" title="mel">
+        <event-group collapsed="1" description="" sid="4630967811662486" title="mel">
             <sub-events>
                 <event-block sid="4030881018829371">
                     <conditions>
@@ -699,7 +741,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="9062624244019905" title="chocolate">
+        <event-group collapsed="1" description="" sid="9062624244019905" title="chocolate">
             <sub-events>
                 <event-block sid="8857630853974725">
                     <conditions>
@@ -728,7 +770,7 @@
                 <event-block sid="9290079085091501">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="8158620172907388" type="System">
-                            <param id="0" name="Interval (seconds)">1.0</param>
+                            <param id="0" name="Interval (seconds)">5.0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -743,7 +785,7 @@
                         <event-block sid="6688857305906438">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="1278901709554671" type="System">
-                                    <param id="0" name="Interval (seconds)">3.0</param>
+                                    <param id="0" name="Interval (seconds)">10.0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -921,7 +963,7 @@
                         <event-block sid="6596537710935815">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="9669232913069997" type="lobo">
-                                    <param id="0" name="Object">cogumelo</param>
+                                    <param id="0" name="Object">famCogu</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -929,7 +971,7 @@
                                     <param id="0" name="Instance variable">StatusLobo</param>
                                     <param id="1" name="Value">&quot;Alucinado&quot;</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="8206113147369424" type="cogumelo" />
+                                <action id="-9" name="Destroy" sid="8206113147369424" type="famCogu" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -942,7 +984,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="550289446415006" type="System">
-                            <param id="0" name="Object to create">cogu</param>
+                            <param id="0" name="Object to create">famCogu</param>
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">random(30,1250)</param>
                             <param id="3" name="Y">random(424,824)</param>
@@ -956,7 +998,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="404090922569282" type="cogumelo" />
+                                <action id="-9" name="Destroy" sid="404090922569282" type="famCogu" />
                             </actions>
                         </event-block>
                     </sub-events>
