@@ -342,7 +342,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="9892087883965252" title="vovo">
+        <event-group description="" sid="9892087883965252" title="vovo">
             <sub-events>
                 <event-block sid="5451443370522223">
                     <conditions>
@@ -549,6 +549,26 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="6216239557057656" type="vovo">
+                            <param id="0" name="Animation">&quot;vovod&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1172695763498857">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3793929742067968" type="System">
+                            <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="674028230263711" type="System">
+                            <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">45</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8852424158845773" type="vovo">
                             <param id="0" name="Animation">&quot;vovod&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1159,5 +1179,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="1278104846557271">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4260027994320125" type="vovo">
+                    <param id="0" name="Object">VovoCasa</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3065794669250626" type="vovo" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

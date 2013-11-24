@@ -48,7 +48,7 @@
         <prop name="Sampling">Point</prop>
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder expanded="0">
         <object-type name="Intro" sid="2166146210770709">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
@@ -1062,14 +1062,14 @@
             </members>
         </family>
     </families>
-    <layout-folder expanded="1">
+    <layout-folder expanded="0">
         <layout>intro.xml</layout>
         <layout>story.xml</layout>
         <layout>menu.xml</layout>
         <layout>levels.xml</layout>
         <layout>gameplay.xml</layout>
     </layout-folder>
-    <event-folder expanded="1">
+    <event-folder expanded="0">
         <event-sheet>intro.xml</event-sheet>
         <event-sheet>story.xml</event-sheet>
         <event-sheet>menu.xml</event-sheet>
@@ -1087,8 +1087,8 @@
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
-    <files-folder expanded="1">
-        <file-folder expanded="0" name="Icons">
+    <files-folder expanded="0">
+        <file-folder expanded="1" name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />
