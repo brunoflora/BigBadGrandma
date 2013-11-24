@@ -402,7 +402,7 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="9892087883965252" title="vovo">
+        <event-group description="" sid="9892087883965252" title="vovo">
             <sub-events>
                 <event-block disabled="1" sid="1278104846557271">
                     <conditions>
@@ -444,7 +444,7 @@
                                 <condition id="-10" name="For" sid="3843421091809861" type="System">
                                     <param id="0" name="Name">&quot;espalhaMaca&quot;</param>
                                     <param id="1" name="Start index">pontodamaca.Maca</param>
-                                    <param id="2" name="End index">pontodamaca.Maca</param>
+                                    <param id="2" name="End index">1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -492,7 +492,7 @@
                             <actions>
                                 <action id="-3" name="Create object" sid="5995195261147974" type="System">
                                     <param id="0" name="Object to create">famMel</param>
-                                    <param id="1" name="Layer">2</param>
+                                    <param id="1" name="Layer">1</param>
                                     <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
                                     <param id="3" name="Y">random(lobo.Y-150,lobo.Y+150)</param>
                                 </action>
@@ -672,7 +672,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="7979352537898816" title="maca">
+        <event-group description="" sid="7979352537898816" title="maca">
             <sub-events>
                 <event-block sid="8102724334789717">
                     <conditions>
@@ -727,7 +727,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="8060990449276904" title="avela">
+        <event-group description="" sid="8060990449276904" title="avela">
             <sub-events>
                 <event-block sid="7065112436800626">
                     <conditions>
@@ -782,7 +782,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="4630967811662486" title="mel">
+        <event-group description="" sid="4630967811662486" title="mel">
             <sub-events>
                 <event-block sid="4030881018829371">
                     <conditions>
