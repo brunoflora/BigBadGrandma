@@ -216,15 +216,15 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="" disabled="1" sid="8932799812515259" title="atalhos">
+                <event-group collapsed="1" description="" sid="8932799812515259" title="atalhos">
                     <sub-events>
-                        <event-block collapsed="1" disabled="1" sid="788581582044614">
+                        <event-block collapsed="1" sid="788581582044614">
                             <conditions>
                                 <condition behavior="8Direction" id="0" name="Is moving" sid="3662912564366603" type="lobo" />
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block disabled="1" sid="8448622653366754">
+                                <event-block sid="8448622653366754">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="7161252994905472" type="Keyboard">
                                             <param id="0" name="Key">87 (W)</param>
@@ -234,13 +234,9 @@
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="1020557905995544" type="lobo">
                                             <param id="0" name="Control">2</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="1094884162203293" type="lobo">
-                                            <param id="0" name="Animation">&quot;lobot&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="2893621074998261">
+                                <event-block sid="2893621074998261">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="507060843958951" type="Keyboard">
                                             <param id="0" name="Key">65 (A)</param>
@@ -250,13 +246,9 @@
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="8601311511002677" type="lobo">
                                             <param id="0" name="Control">0</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="1370388965491457" type="lobo">
-                                            <param id="0" name="Animation">&quot;loboe&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="2343070114563092">
+                                <event-block sid="2343070114563092">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="9397705008025699" type="Keyboard">
                                             <param id="0" name="Key">68 (D)</param>
@@ -266,13 +258,9 @@
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="1039972264500049" type="lobo">
                                             <param id="0" name="Control">1</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="8373467949680698" type="lobo">
-                                            <param id="0" name="Animation">&quot;lobod&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="5783887560471997">
+                                <event-block sid="5783887560471997">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="8565315773669967" type="Keyboard">
                                             <param id="0" name="Key">83 (S)</param>
@@ -282,21 +270,17 @@
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="4779890189224192" type="lobo">
                                             <param id="0" name="Control">3</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="5861689639731938" type="lobo">
-                                            <param id="0" name="Animation">&quot;lobob&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block collapsed="1" disabled="1" sid="1401183934002604">
+                        <event-block collapsed="1" sid="1401183934002604">
                             <conditions>
                                 <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="5395882560091967" type="lobo" />
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block disabled="1" sid="2488725040248354">
+                                <event-block sid="2488725040248354">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="4083424292228508" type="Keyboard">
                                             <param id="0" name="Key">87 (W)</param>
@@ -306,13 +290,9 @@
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="5232415826785561" type="lobo">
                                             <param id="0" name="Control">2</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="1351291374121165" type="lobo">
-                                            <param id="0" name="Animation">&quot;StandUp&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="8346672660228264">
+                                <event-block sid="8346672660228264">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="5644883156403361" type="Keyboard">
                                             <param id="0" name="Key">65 (A)</param>
@@ -322,13 +302,9 @@
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="6902934725977757" type="lobo">
                                             <param id="0" name="Control">0</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="2746811819549077" type="lobo">
-                                            <param id="0" name="Animation">&quot;StandLeft&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="4756432537661648">
+                                <event-block sid="4756432537661648">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="3718219695736768" type="Keyboard">
                                             <param id="0" name="Key">68 (D)</param>
@@ -338,13 +314,9 @@
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="3704753105304182" type="lobo">
                                             <param id="0" name="Control">1</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="6064400587861091" type="lobo">
-                                            <param id="0" name="Animation">&quot;StandDown&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="2447893829186259">
+                                <event-block sid="2447893829186259">
                                     <conditions>
                                         <condition id="2" name="Key is down" sid="6085765053652959" type="Keyboard">
                                             <param id="0" name="Key">83 (S)</param>
@@ -354,17 +326,13 @@
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="4320144852373361" type="lobo">
                                             <param id="0" name="Control">3</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="4673512714871227" type="lobo">
-                                            <param id="0" name="Animation">&quot;StandRight&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-block sid="1357245956017919">
+                <event-block disabled="1" sid="1357245956017919">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="6253129283780105" type="lobo">
                             <param id="0" name="Object">vovo</param>
@@ -1136,7 +1104,7 @@
                         <event-block sid="6081223695364612">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="2837965589055393" type="System">
-                                    <param id="0" name="Interval (seconds)">5.0</param>
+                                    <param id="0" name="Interval (seconds)">10.0</param>
                                 </condition>
                             </conditions>
                             <actions>

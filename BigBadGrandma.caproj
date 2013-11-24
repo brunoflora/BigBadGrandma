@@ -529,6 +529,9 @@
         </object-type>
         <object-type name="cogumelo" sid="2204290254020054">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Cogumelo" sid="909442791751826" type="string" />
+            </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8426769975586369" speed="5">
                     <frame duration="1" hotspotX="0.498266" hotspotY="0.5">
