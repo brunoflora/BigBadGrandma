@@ -18,9 +18,9 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
         <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
     </used-behaviors>
@@ -1015,7 +1015,16 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2266520549690825" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504488">
+                        <collision-poly>
+                            <point x="0.5" y="0.0520646" />
+                            <point x="0.812281" y="0.179533" />
+                            <point x="0.970175" y="0.499102" />
+                            <point x="0.5" y="0.971275" />
+                            <point x="0.157895" y="0.849192" />
+                            <point x="0.0175439" y="0.499102" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

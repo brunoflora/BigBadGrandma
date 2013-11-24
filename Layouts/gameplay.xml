@@ -456,17 +456,17 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
-                    <blend-mode>1</blend-mode>
+                    <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>654</x>
-                        <y>-175</y>
+                        <x>662</x>
+                        <y>-237</y>
                         <z>0</z>
-                        <width>278.448547363</width>
-                        <height>250.893753052</height>
+                        <width>333.745422363</width>
+                        <height>343.321594238</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.504950523</hotspotY>
+                        <hotspotY>0.504488349</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
