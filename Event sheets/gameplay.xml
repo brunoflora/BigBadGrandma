@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>gameplay</name>
     <events>
-        <event-group description="" sid="9591909944101965" title="lobo">
+        <event-group collapsed="1" description="" sid="9591909944101965" title="lobo">
             <sub-events>
                 <event-group collapsed="1" description="" sid="6810845781910417" title="movimentacao">
                     <sub-events>
@@ -338,158 +338,63 @@
                             <param id="0" name="Object">vovo</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="1" name="Reverse" sid="2949801381336083" type="vovo" />
-                    </actions>
+                    <actions />
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="9892087883965252" title="vovo">
+        <event-group description="" sid="9892087883965252" title="vovo">
             <sub-events>
                 <event-group description="" sid="2965454720712087" title="ai">
                     <sub-events>
-                        <variable constant="0" name="vovoSpeed" sid="3833418623289465" static="0" type="number">100</variable>
+                        <event-block sid="5451443370522223">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="325239409364629" type="vovo">
+                                    <param id="0" name="Object">lobo</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="2039303938332303" type="vovo">
+                                    <param id="0" name="Instance variable">Tesao</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="8313036881274244" type="vovo">
+                                    <param id="0" name="Object">Explosion</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="1504211392135467" type="vovo" />
+                            </actions>
+                        </event-block>
                         <event-block sid="3145310491282811">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="8372229260228609" type="System">
                                     <param id="0" name="First value">vovo.Tesao</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">1</param>
+                                    <param id="2" name="Second value">1.0</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="2216684280365489">
+                                <event-block sid="2364612778355473">
                                     <conditions>
-                                        <condition id="-1" name="Every tick" sid="7233241903035178" type="System" />
+                                        <condition id="-6" name="Every X seconds" sid="1598693300587839" type="System">
+                                            <param id="0" name="Interval (seconds)">1</param>
+                                        </condition>
                                     </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <event-block collapsed="1" sid="8584801617068186">
-                                            <conditions>
-                                                <condition id="-8" inverted="1" name="Compare two values" sid="5703564965718537" type="System">
-                                                    <param id="0" name="First value">floor(vovo.Y)</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Second value">floor(lobo.Y)</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions />
-                                            <sub-events>
-                                                <event-block sid="2818206741287733">
-                                                    <conditions>
-                                                        <condition id="-8" name="Compare two values" sid="7550213488024466" type="System">
-                                                            <param id="0" name="First value">vovo.Y</param>
-                                                            <param id="1" name="Comparison">4</param>
-                                                            <param id="2" name="Second value">lobo.Y</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action behavior="8Direction" id="10" name="Set vector Y" sid="6025228648162052" type="vovo">
-                                                            <param id="0" name="Vector Y">-vovoSpeed</param>
-                                                        </action>
-                                                        <action id="-10" name="Set value" sid="4754568618316342" type="vovo">
-                                                            <param id="0" name="Instance variable">Sentido</param>
-                                                            <param id="1" name="Value">&quot;cima&quot;</param>
-                                                        </action>
-                                                    </actions>
-                                                </event-block>
-                                                <event-block sid="734667102351809">
-                                                    <conditions>
-                                                        <condition id="-8" name="Compare two values" sid="5130460890179579" type="System">
-                                                            <param id="0" name="First value">vovo.Y</param>
-                                                            <param id="1" name="Comparison">2</param>
-                                                            <param id="2" name="Second value">lobo.Y</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action behavior="8Direction" id="10" name="Set vector Y" sid="8268991117994254" type="vovo">
-                                                            <param id="0" name="Vector Y">vovoSpeed</param>
-                                                        </action>
-                                                        <action id="-10" name="Set value" sid="350385670051523" type="vovo">
-                                                            <param id="0" name="Instance variable">Sentido</param>
-                                                            <param id="1" name="Value">&quot;baixo&quot;</param>
-                                                        </action>
-                                                    </actions>
-                                                </event-block>
-                                            </sub-events>
-                                        </event-block>
-                                        <event-block collapsed="1" sid="6867558970484746">
-                                            <conditions>
-                                                <condition id="-8" inverted="1" name="Compare two values" sid="3781372716004383" type="System">
-                                                    <param id="0" name="First value">floor(vovo.X)</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Second value">floor(lobo.X)</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions />
-                                            <sub-events>
-                                                <event-block sid="1304537935697489">
-                                                    <conditions>
-                                                        <condition id="-8" name="Compare two values" sid="6455044043948835" type="System">
-                                                            <param id="0" name="First value">vovo.X</param>
-                                                            <param id="1" name="Comparison">2</param>
-                                                            <param id="2" name="Second value">lobo.X</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action behavior="8Direction" id="9" name="Set vector X" sid="2068444089120086" type="vovo">
-                                                            <param id="0" name="Vector X">vovoSpeed</param>
-                                                        </action>
-                                                        <action id="-10" name="Set value" sid="4041998486091331" type="vovo">
-                                                            <param id="0" name="Instance variable">Sentido</param>
-                                                            <param id="1" name="Value">&quot;direita&quot;</param>
-                                                        </action>
-                                                    </actions>
-                                                </event-block>
-                                                <event-block sid="9290489197497758">
-                                                    <conditions>
-                                                        <condition id="-8" name="Compare two values" sid="8842306892543712" type="System">
-                                                            <param id="0" name="First value">vovo.X</param>
-                                                            <param id="1" name="Comparison">4</param>
-                                                            <param id="2" name="Second value">lobo.X</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action behavior="8Direction" id="9" name="Set vector X" sid="7034703522454294" type="vovo">
-                                                            <param id="0" name="Vector X">-vovoSpeed</param>
-                                                        </action>
-                                                        <action id="-10" name="Set value" sid="912907934102275" type="vovo">
-                                                            <param id="0" name="Instance variable">Sentido</param>
-                                                            <param id="1" name="Value">&quot;esquerda&quot;</param>
-                                                        </action>
-                                                    </actions>
-                                                </event-block>
-                                            </sub-events>
-                                        </event-block>
-                                        <event-block sid="1964114778946174">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="6638607451381168" type="System">
-                                                    <param id="0" name="First value">floor(vovo.Y)</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Second value">floor(lobo.Y)</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action behavior="8Direction" id="10" name="Set vector Y" sid="8192256863056019" type="vovo">
-                                                    <param id="0" name="Vector Y">0</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="7122953822767068">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="5770740103962607" type="System">
-                                                    <param id="0" name="First value">floor(vovo.X)</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Second value">floor(lobo.X)</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action behavior="8Direction" id="9" name="Set vector X" sid="8425688474721168" type="vovo">
-                                                    <param id="0" name="Vector X">0</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="0" name="Find path" sid="6821392747009034" type="vovo">
+                                            <param id="0" name="X">lobo.X</param>
+                                            <param id="1" name="Y">lobo.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="3476838094271458">
+                                    <conditions>
+                                        <condition behavior="Pathfinding" id="0" name="On path found" sid="8992358075655426" type="vovo" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="1" name="Move along path" sid="2343234206771958" type="vovo" />
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -503,183 +408,107 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="5062422867119339">
+                                <event-block sid="9329981379721208">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="9314782576608295" type="System">
-                                            <param id="0" name="First value">vovo.Y</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">VovoCasa.Y</param>
+                                        <condition id="-6" name="Every X seconds" sid="5437197800128925" type="System">
+                                            <param id="0" name="Interval (seconds)">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="8Direction" id="10" name="Set vector Y" sid="7719801151500441" type="vovo">
-                                            <param id="0" name="Vector Y">-vovoSpeed</param>
+                                        <action behavior="Pathfinding" id="0" name="Find path" sid="4449563921711254" type="vovo">
+                                            <param id="0" name="X">vovoCasa.X</param>
+                                            <param id="1" name="Y">vovoCasa.Y</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="2593714375268834">
+                                <event-block sid="5443241794989838">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="2894284194893824" type="System">
-                                            <param id="0" name="First value">vovo.Y</param>
-                                            <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Second value">VovoCasa.Y</param>
-                                        </condition>
+                                        <condition behavior="Pathfinding" id="0" name="On path found" sid="6751234318273186" type="vovo" />
                                     </conditions>
                                     <actions>
-                                        <action behavior="8Direction" id="10" name="Set vector Y" sid="2733736017370979" type="vovo">
-                                            <param id="0" name="Vector Y">vovoSpeed</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="7755842461066228">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="2493602093453033" type="System">
-                                            <param id="0" name="First value">vovo.X</param>
-                                            <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Second value">VovoCasa.X</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="9" name="Set vector X" sid="8298655562701053" type="vovo">
-                                            <param id="0" name="Vector X">vovoSpeed</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="3853187153180801">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="6268439293890492" type="System">
-                                            <param id="0" name="First value">vovo.X</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">VovoCasa.X</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="9" name="Set vector X" sid="4605422827139056" type="vovo">
-                                            <param id="0" name="Vector X">-vovoSpeed</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="2495197817967395">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="2101664863829869" type="System">
-                                            <param id="0" name="First value">vovo.Y</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">VovoCasa.Y</param>
-                                        </condition>
-                                        <condition id="-8" name="Compare two values" sid="5291254164098583" type="System">
-                                            <param id="0" name="First value">vovo.X</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">VovoCasa.X</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="9" name="Set vector X" sid="4191987384566984" type="vovo">
-                                            <param id="0" name="Vector X">-vovoSpeed</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="3190295768895479">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="6913165612971448" type="System">
-                                            <param id="0" name="First value">vovo.X</param>
-                                            <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Second value">VovoCasa.X</param>
-                                        </condition>
-                                        <condition id="-8" name="Compare two values" sid="1676785714064637" type="System">
-                                            <param id="0" name="First value">vovo.Y</param>
-                                            <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Second value">VovoCasa.Y</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="9" name="Set vector X" sid="9308282483987045" type="vovo">
-                                            <param id="0" name="Vector X">vovoSpeed</param>
-                                        </action>
+                                        <action behavior="Pathfinding" id="1" name="Move along path" sid="494193739572323" type="vovo" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="5451443370522223">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="325239409364629" type="vovo">
-                                    <param id="0" name="Object">lobo</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="2039303938332303" type="vovo">
-                                    <param id="0" name="Instance variable">Tesao</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="7457766603960357">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="6844932715602122" type="System">
-                                    <param id="0" name="First value">vovo.Sentido</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;cima&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="9402027393209447" type="vovo">
-                                    <param id="0" name="Animation">&quot;vovot&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="7953320261699763">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="4756484386097795" type="System">
-                                    <param id="0" name="First value">vovo.Sentido</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;baixo&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="7931411285266403" type="vovo">
-                                    <param id="0" name="Animation">&quot;vovob&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="819913831038078">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="1373579500208538" type="System">
-                                    <param id="0" name="First value">vovo.Sentido</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;esquerda&quot;</param>
+                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">255</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="1672396774062571" type="System">
+                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">135</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="2263443247675722" type="vovo">
+                                <action id="4" name="Set animation" sid="4293831346109791" type="vovo">
                                     <param id="0" name="Animation">&quot;vovoe&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="6874590843212903">
+                        <event-block sid="2496823096180996">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="933578743768788" type="System">
-                                    <param id="0" name="First value">vovo.Sentido</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;direita&quot;</param>
+                                <condition id="-8" name="Compare two values" sid="1078555062417476" type="System">
+                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">225</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="5532566199101692" type="System">
+                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">315</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="3739182110642666" type="vovo">
+                                <action id="4" name="Set animation" sid="9241707768186509" type="vovo">
+                                    <param id="0" name="Animation">&quot;vovot&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9740329191197595">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="869052631972583" type="System">
+                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">315</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="9326791784759484" type="System">
+                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">380</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="6216239557057656" type="vovo">
                                     <param id="0" name="Animation">&quot;vovod&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="7096777768339951">
+                        <event-block sid="6423942046021609">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="317411215212519" type="vovo">
-                                    <param id="0" name="Object">lobo</param>
+                                <condition id="-8" name="Compare two values" sid="115736093399796" type="System">
+                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">135</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="6152663154775917" type="System">
+                                    <param id="0" name="First value">vovo.Pathfinding.MovingAngle</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">45</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="8Direction" id="1" name="Reverse" sid="7641756823198913" type="lobo" />
+                                <action id="4" name="Set animation" sid="318985523549183" type="vovo">
+                                    <param id="0" name="Animation">&quot;vovob&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -906,9 +735,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="7808370104234298" title="cogumelo">
+        <event-group collapsed="1" description="" sid="7808370104234298" title="cogumelo">
             <sub-events>
-                <event-group description="" sid="4677533963555962" title="Alucinado">
+                <event-group collapsed="1" description="" sid="4677533963555962" title="Alucinado">
                     <sub-events>
                         <event-block sid="1519130401099005">
                             <conditions>
