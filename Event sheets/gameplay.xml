@@ -373,7 +373,7 @@
                             </conditions>
                             <actions>
                                 <action id="-3" name="Create object" sid="4501802238228733" type="System">
-                                    <param id="0" name="Object to create">maca</param>
+                                    <param id="0" name="Object to create">famMaca</param>
                                     <param id="1" name="Layer">2</param>
                                     <param id="2" name="X">random(lobo.X-100,lobo.X+100)</param>
                                     <param id="3" name="Y">random(lobo.Y+100,lobo.Y+100)</param>
@@ -539,7 +539,7 @@
                 <event-block sid="8102724334789717">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="6421382740284917" type="lobo">
-                            <param id="0" name="Object">maca</param>
+                            <param id="0" name="Object">famMaca</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -547,7 +547,7 @@
                             <param id="0" name="Instance variable">Maca</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="7107415544316979" type="maca" />
+                        <action id="-9" name="Destroy" sid="7107415544316979" type="famMaca" />
                     </actions>
                 </event-block>
                 <event-block sid="6004855176759837">
@@ -568,7 +568,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="3741056928446577" type="System">
-                            <param id="0" name="Object to create">apple</param>
+                            <param id="0" name="Object to create">famMaca</param>
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">random(30,1250)</param>
                             <param id="3" name="Y">random(424,824)</param>
@@ -582,7 +582,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="7298350725471837" type="maca" />
+                                <action id="-9" name="Destroy" sid="7298350725471837" type="famMaca" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -754,7 +754,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="7808370104234298" title="cogumelo">
+        <event-group collapsed="1" description="" sid="7808370104234298" title="cogumelo">
             <sub-events>
                 <event-group description="" sid="4677533963555962" title="Alucinado">
                     <sub-events>

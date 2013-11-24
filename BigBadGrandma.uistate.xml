@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>gameplay</layout>
-        <event-sheet active="1">gameplay</event-sheet>
+        <layout active="1">gameplay</layout>
+        <event-sheet>gameplay</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,5 +28,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="cocos" />
         <family expanded="0" name="luvas" />
         <family expanded="0" name="stroball" />
+        <family expanded="0" name="famMaca" />
     </families-expanded>
 </c2uistate>

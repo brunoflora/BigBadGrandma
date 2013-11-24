@@ -1064,6 +1064,11 @@
                 <member>globo</member>
             </members>
         </family>
+        <family name="famMaca" plugin-id="Sprite" sid="2219217213509036">
+            <members>
+                <member>maca</member>
+            </members>
+        </family>
     </families>
     <layout-folder expanded="1">
         <layout>intro.xml</layout>
