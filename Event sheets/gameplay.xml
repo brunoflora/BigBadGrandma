@@ -357,13 +357,36 @@
                                     <param id="0" name="Instance variable">Tesao</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="0" name="Spawn another object" sid="8313036881274244" type="vovo">
+                                <action disabled="1" id="0" name="Spawn another object" sid="8313036881274244" type="vovo">
                                     <param id="0" name="Object">Explosion</param>
                                     <param id="1" name="Layer">1</param>
                                     <param id="2" name="Image point">0</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="1504211392135467" type="vovo" />
+                                <action disabled="1" id="-9" name="Destroy" sid="1504211392135467" type="vovo" />
                             </actions>
+                            <sub-events>
+                                <event-block sid="9544663541630678">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="3843421091809861" type="System">
+                                            <param id="0" name="Name">&quot;espalhaMaca&quot;</param>
+                                            <param id="1" name="Start index">pontodamaca.Maca</param>
+                                            <param id="2" name="End index">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="4501802238228733" type="System">
+                                            <param id="0" name="Object to create">maca</param>
+                                            <param id="1" name="Layer">2</param>
+                                            <param id="2" name="X">random(lobo.X-100,lobo.X+100)</param>
+                                            <param id="3" name="Y">random(lobo.Y+100,lobo.Y+100)</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="3326645062936723" type="pontodamaca">
+                                            <param id="0" name="Instance variable">Maca</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="3145310491282811">
                             <conditions>
@@ -515,7 +538,7 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="7979352537898816" title="maca">
+        <event-group description="" sid="7979352537898816" title="maca">
             <sub-events>
                 <event-block sid="8102724334789717">
                     <conditions>
@@ -526,7 +549,7 @@
                     <actions>
                         <action id="-11" name="Add to" sid="3482498089725964" type="pontodamaca">
                             <param id="0" name="Instance variable">Maca</param>
-                            <param id="1" name="Value">10</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="7107415544316979" type="maca" />
                     </actions>
@@ -570,9 +593,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="8060990449276904" title="avela">
+        <event-group collapsed="1" description="" disabled="1" sid="8060990449276904" title="avela">
             <sub-events>
-                <event-block sid="7065112436800626">
+                <event-block disabled="1" sid="7065112436800626">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="2880640000507269" type="lobo">
                             <param id="0" name="Object">avela</param>
@@ -586,7 +609,7 @@
                         <action id="-9" name="Destroy" sid="7126210942262271" type="avela" />
                     </actions>
                 </event-block>
-                <event-block sid="2260782191076577">
+                <event-block disabled="1" sid="2260782191076577">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="860236161226411" type="System" />
                     </conditions>
@@ -596,7 +619,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="2140755315325584">
+                <event-block disabled="1" sid="2140755315325584">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="6249496714712241" type="System">
                             <param id="0" name="Interval (seconds)">2.5</param>
@@ -611,7 +634,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="2068103999778439">
+                        <event-block disabled="1" sid="2068103999778439">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="9528964478169445" type="System">
                                     <param id="0" name="Interval (seconds)">5.0</param>
@@ -625,9 +648,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="4630967811662486" title="mel">
+        <event-group collapsed="1" description="" disabled="1" sid="4630967811662486" title="mel">
             <sub-events>
-                <event-block sid="4030881018829371">
+                <event-block disabled="1" sid="4030881018829371">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="7021529598068755" type="lobo">
                             <param id="0" name="Object">mel</param>
@@ -641,7 +664,7 @@
                         <action id="-9" name="Destroy" sid="3068194191227916" type="mel" />
                     </actions>
                 </event-block>
-                <event-block sid="4095981498371909">
+                <event-block disabled="1" sid="4095981498371909">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="784381984532222" type="System" />
                     </conditions>
@@ -651,7 +674,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="2793587708620474">
+                <event-block disabled="1" sid="2793587708620474">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="6307667049641503" type="System">
                             <param id="0" name="Interval (seconds)">3.5</param>
@@ -666,7 +689,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="9634956380531529">
+                        <event-block disabled="1" sid="9634956380531529">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="569842494520392" type="System">
                                     <param id="0" name="Interval (seconds)">5.0</param>
@@ -680,9 +703,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="9062624244019905" title="chocolate">
+        <event-group collapsed="1" description="" disabled="1" sid="9062624244019905" title="chocolate">
             <sub-events>
-                <event-block sid="8857630853974725">
+                <event-block disabled="1" sid="8857630853974725">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="3537286167445028" type="lobo">
                             <param id="0" name="Object">chocolate</param>
@@ -696,7 +719,7 @@
                         <action id="-9" name="Destroy" sid="9011343882600186" type="chocolate" />
                     </actions>
                 </event-block>
-                <event-block sid="2815722103036936">
+                <event-block disabled="1" sid="2815722103036936">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="5049095493181743" type="System" />
                     </conditions>
@@ -706,7 +729,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="9290079085091501">
+                <event-block disabled="1" sid="9290079085091501">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="8158620172907388" type="System">
                             <param id="0" name="Interval (seconds)">5.0</param>
@@ -721,7 +744,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="6688857305906438">
+                        <event-block disabled="1" sid="6688857305906438">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="1278901709554671" type="System">
                                     <param id="0" name="Interval (seconds)">2.5</param>
@@ -735,9 +758,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="7808370104234298" title="cogumelo">
+        <event-group description="" sid="7808370104234298" title="cogumelo">
             <sub-events>
-                <event-group collapsed="1" description="" sid="4677533963555962" title="Alucinado">
+                <event-group description="" sid="4677533963555962" title="Alucinado">
                     <sub-events>
                         <event-block sid="1519130401099005">
                             <conditions>
