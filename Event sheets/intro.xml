@@ -7,7 +7,7 @@
             <conditions>
                 <condition id="-7" name="Compare time" sid="8193787537276124" type="System">
                     <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Time (seconds)">3.0</param>
+                    <param id="1" name="Time (seconds)">5.0</param>
                 </condition>
             </conditions>
             <actions>
