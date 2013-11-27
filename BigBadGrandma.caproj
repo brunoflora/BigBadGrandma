@@ -1294,6 +1294,18 @@
         <file name="pickup.m4a" />
         <file name="pickup.ogg" />
         <file name="pickup.wav" />
+        <file name="powerup.m4a" />
+        <file name="powerup.ogg" />
+        <file name="powerup.wav" />
+        <file name="mursh.m4a" />
+        <file name="mursh.ogg" />
+        <file name="mursh.wav" />
+        <file name="vovo.m4a" />
+        <file name="vovo.ogg" />
+        <file name="vovo.wav" />
+        <file name="inibe.m4a" />
+        <file name="inibe.ogg" />
+        <file name="inibe.wav" />
     </sounds-folder>
     <music-folder expanded="1" />
     <files-folder expanded="0">

@@ -451,6 +451,12 @@
                                             <param id="1" name="Layer">1</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action id="0" name="Play" sid="4525828260392694" type="Audio">
+                                            <param id="0" name="Audio file">inibe</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;inibe&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -489,6 +495,12 @@
                                     <param id="1" name="Layer">1</param>
                                     <param id="2" name="X">640</param>
                                     <param id="3" name="Y">200</param>
+                                </action>
+                                <action id="0" name="Play" sid="8468607706413368" type="Audio">
+                                    <param id="0" name="Audio file">vovo</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;vovo&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -927,6 +939,12 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="9011343882600186" type="famChoco" />
+                        <action id="0" name="Play" sid="7028668155304576" type="Audio">
+                            <param id="0" name="Audio file">powerup</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;powerup&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="2815722103036936">
@@ -1192,6 +1210,12 @@
                                     <param id="1" name="Value">&quot;Alucinado&quot;</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="8206113147369424" type="famCogu" />
+                                <action id="0" name="Play" sid="778377743653891" type="Audio">
+                                    <param id="0" name="Audio file">mursh</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;mursh&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
