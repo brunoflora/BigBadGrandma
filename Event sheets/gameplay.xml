@@ -434,12 +434,111 @@
                         <action id="-3" name="Create object" sid="8740124141222776" type="System">
                             <param id="0" name="Object to create">vovo</param>
                             <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">random(30,1250)</param>
-                            <param id="3" name="Y">random(250,924)</param>
+                            <param id="2" name="X">640</param>
+                            <param id="3" name="Y">200</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="8408926872564997">
+                        <event-block sid="3214399581917679">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="1091658963965375" type="System">
+                                    <param id="0" name="First value">pontodamaca.Maca</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="9544663541630678">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="3843421091809861" type="System">
+                                            <param id="0" name="Name">&quot;espalhaMaca&quot;</param>
+                                            <param id="1" name="Start index">pontodamaca.Maca</param>
+                                            <param id="2" name="End index">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="4501802238228733" type="System">
+                                            <param id="0" name="Object to create">famMaca</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
+                                            <param id="3" name="Y">random(lobo.Y-150,lobo.Y+150)</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="3326645062936723" type="pontodamaca">
+                                            <param id="0" name="Instance variable">Maca</param>
+                                            <param id="1" name="Value">pontodamaca.Maca</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="9258861693662422">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="2681696863124768" type="System">
+                                    <param id="0" name="First value">pontodaavela.Avela</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="3344320744953731">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="2577100427945536" type="System">
+                                            <param id="0" name="Name">&quot;espalhaAvela&quot;</param>
+                                            <param id="1" name="Start index">pontodaavela.Avela</param>
+                                            <param id="2" name="End index">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="4281948667200322" type="System">
+                                            <param id="0" name="Object to create">famAvela</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
+                                            <param id="3" name="Y">random(lobo.Y-150,lobo.Y+100)</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="1380531812356214" type="pontodaavela">
+                                            <param id="0" name="Instance variable">Avela</param>
+                                            <param id="1" name="Value">pontodaavela.Avela</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="3273655795312711">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="3063023491355184" type="System">
+                                    <param id="0" name="First value">pontodomel.Mel</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="4686338693084496">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="883977409259668" type="System">
+                                            <param id="0" name="Name">&quot;espalhaMel&quot;</param>
+                                            <param id="1" name="Start index">pontodomel.Mel</param>
+                                            <param id="2" name="End index">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="5995195261147974" type="System">
+                                            <param id="0" name="Object to create">famMel</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
+                                            <param id="3" name="Y">random(lobo.Y-150,lobo.Y+150)</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="2183328748795886" type="pontodomel">
+                                            <param id="0" name="Instance variable">Mel</param>
+                                            <param id="1" name="Value">pontodomel.Mel</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block disabled="1" sid="8408926872564997">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="1020530919486483" type="System">
                                     <param id="0" name="First value">pontodochocolate.Chocolate</param>
@@ -449,7 +548,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="9519796312169693">
+                                <event-block disabled="1" sid="9519796312169693">
                                     <conditions>
                                         <condition id="-10" name="For" sid="4812596021198902" type="System">
                                             <param id="0" name="Name">&quot;inibeVovo&quot;</param>
@@ -472,7 +571,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="9084858654546607">
+                        <event-block disabled="1" sid="9084858654546607">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="2804295495629267" type="System">
                                     <param id="0" name="First value">pontodochocolate.Chocolate</param>
@@ -481,107 +580,6 @@
                                 </condition>
                             </conditions>
                             <actions />
-                            <sub-events>
-                                <event-block sid="3214399581917679">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="1091658963965375" type="System">
-                                            <param id="0" name="First value">pontodamaca.Maca</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <event-block sid="9544663541630678">
-                                            <conditions>
-                                                <condition id="-10" name="For" sid="3843421091809861" type="System">
-                                                    <param id="0" name="Name">&quot;espalhaMaca&quot;</param>
-                                                    <param id="1" name="Start index">pontodamaca.Maca</param>
-                                                    <param id="2" name="End index">1</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-3" name="Create object" sid="4501802238228733" type="System">
-                                                    <param id="0" name="Object to create">famMaca</param>
-                                                    <param id="1" name="Layer">1</param>
-                                                    <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
-                                                    <param id="3" name="Y">random(lobo.Y-150,lobo.Y+150)</param>
-                                                </action>
-                                                <action id="-12" name="Subtract from" sid="3326645062936723" type="pontodamaca">
-                                                    <param id="0" name="Instance variable">Maca</param>
-                                                    <param id="1" name="Value">pontodamaca.Maca</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="9258861693662422">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="2681696863124768" type="System">
-                                            <param id="0" name="First value">pontodaavela.Avela</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <event-block sid="3344320744953731">
-                                            <conditions>
-                                                <condition id="-10" name="For" sid="2577100427945536" type="System">
-                                                    <param id="0" name="Name">&quot;espalhaAvela&quot;</param>
-                                                    <param id="1" name="Start index">pontodaavela.Avela</param>
-                                                    <param id="2" name="End index">1</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-3" name="Create object" sid="4281948667200322" type="System">
-                                                    <param id="0" name="Object to create">famAvela</param>
-                                                    <param id="1" name="Layer">1</param>
-                                                    <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
-                                                    <param id="3" name="Y">random(lobo.Y-150,lobo.Y+100)</param>
-                                                </action>
-                                                <action id="-12" name="Subtract from" sid="1380531812356214" type="pontodaavela">
-                                                    <param id="0" name="Instance variable">Avela</param>
-                                                    <param id="1" name="Value">pontodaavela.Avela</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="3273655795312711">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="3063023491355184" type="System">
-                                            <param id="0" name="First value">pontodomel.Mel</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <event-block sid="4686338693084496">
-                                            <conditions>
-                                                <condition id="-10" name="For" sid="883977409259668" type="System">
-                                                    <param id="0" name="Name">&quot;espalhaMel&quot;</param>
-                                                    <param id="1" name="Start index">pontodomel.Mel</param>
-                                                    <param id="2" name="End index">1</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-3" name="Create object" sid="5995195261147974" type="System">
-                                                    <param id="0" name="Object to create">famMel</param>
-                                                    <param id="1" name="Layer">1</param>
-                                                    <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
-                                                    <param id="3" name="Y">random(lobo.Y-150,lobo.Y+150)</param>
-                                                </action>
-                                                <action id="-12" name="Subtract from" sid="2183328748795886" type="pontodomel">
-                                                    <param id="0" name="Instance variable">Mel</param>
-                                                    <param id="1" name="Value">pontodomel.Mel</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -618,7 +616,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="8940388022043759">
+                <event-block disabled="1" sid="8940388022043759">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="4188405485289417" type="System">
                             <param id="0" name="First value">vovo.Tesao</param>
@@ -628,7 +626,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="9329981379721208">
+                        <event-block disabled="1" sid="9329981379721208">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="5437197800128925" type="System">
                                     <param id="0" name="Interval (seconds)">1</param>
@@ -641,7 +639,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="5443241794989838">
+                        <event-block disabled="1" sid="5443241794989838">
                             <conditions>
                                 <condition behavior="Pathfinding" id="0" name="On path found" sid="6751234318273186" type="vovo" />
                             </conditions>
@@ -753,7 +751,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="7979352537898816" title="maca">
+        <event-group description="" sid="7979352537898816" title="maca">
             <sub-events>
                 <event-block sid="8102724334789717">
                     <conditions>
@@ -768,21 +766,23 @@
                         </action>
                         <action id="-9" name="Destroy" sid="7107415544316979" type="famMaca" />
                     </actions>
-                </event-block>
-                <event-block sid="6004855176759837">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="6077993041897537" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="8601543551080009" type="pontodamaca">
-                            <param id="0" name="Text">pontodamaca.Maca</param>
-                        </action>
-                    </actions>
+                    <sub-events>
+                        <event-block sid="6004855176759837">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="6077993041897537" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="8601543551080009" type="pontodamaca">
+                                    <param id="0" name="Text">pontodamaca.Maca</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="8806142618400488">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="1850075440861579" type="System">
-                            <param id="0" name="Interval (seconds)">1.5</param>
+                            <param id="0" name="Interval (seconds)">1.0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -801,16 +801,16 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="7298350725471837" type="maca" />
+                                <action id="-9" name="Destroy" sid="7298350725471837" type="famMaca" />
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="8060990449276904" title="avela">
+        <event-group collapsed="1" description="" disabled="1" sid="8060990449276904" title="avela">
             <sub-events>
-                <event-block sid="7065112436800626">
+                <event-block disabled="1" sid="7065112436800626">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="2880640000507269" type="lobo">
                             <param id="0" name="Object">famAvela</param>
@@ -824,7 +824,7 @@
                         <action id="-9" name="Destroy" sid="7126210942262271" type="famAvela" />
                     </actions>
                 </event-block>
-                <event-block sid="2260782191076577">
+                <event-block disabled="1" sid="2260782191076577">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="860236161226411" type="System" />
                     </conditions>
@@ -834,7 +834,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="2140755315325584">
+                <event-block disabled="1" sid="2140755315325584">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="6249496714712241" type="System">
                             <param id="0" name="Interval (seconds)">1.5</param>
@@ -849,7 +849,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="2068103999778439">
+                        <event-block disabled="1" sid="2068103999778439">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="9528964478169445" type="System">
                                     <param id="0" name="Interval (seconds)">5.0</param>
@@ -863,9 +863,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="4630967811662486" title="mel">
+        <event-group collapsed="1" description="" disabled="1" sid="4630967811662486" title="mel">
             <sub-events>
-                <event-block sid="4030881018829371">
+                <event-block disabled="1" sid="4030881018829371">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="7021529598068755" type="lobo">
                             <param id="0" name="Object">famMel</param>
@@ -879,7 +879,7 @@
                         <action id="-9" name="Destroy" sid="3068194191227916" type="famMel" />
                     </actions>
                 </event-block>
-                <event-block sid="4095981498371909">
+                <event-block disabled="1" sid="4095981498371909">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="784381984532222" type="System" />
                     </conditions>
@@ -889,7 +889,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="2793587708620474">
+                <event-block disabled="1" sid="2793587708620474">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="6307667049641503" type="System">
                             <param id="0" name="Interval (seconds)">1.5</param>
@@ -904,7 +904,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="9634956380531529">
+                        <event-block disabled="1" sid="9634956380531529">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="569842494520392" type="System">
                                     <param id="0" name="Interval (seconds)">5.0</param>
@@ -918,7 +918,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="9062624244019905" title="chocolate">
+        <event-group collapsed="1" description="" disabled="1" sid="9062624244019905" title="chocolate">
             <sub-events>
                 <event-block sid="8857630853974725">
                     <conditions>
