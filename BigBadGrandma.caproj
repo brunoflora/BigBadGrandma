@@ -1207,6 +1207,44 @@
         <object-type name="Audio" sid="8211428939964075">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="Sprite15" sid="5384666571394373">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6253548953366843" speed="5">
+                    <frame duration="1" hotspotX="0.501205" hotspotY="0.50084">
+                        <collision-poly>
+                            <point x="0.240964" y="0.168067" />
+                            <point x="0.498795" y="0.0638655" />
+                            <point x="0.749398" y="0.17479" />
+                            <point x="0.860241" y="0.49916" />
+                            <point x="0.792771" y="0.855462" />
+                            <point x="0.498795" y="0.909244" />
+                            <point x="0.325301" y="0.773109" />
+                            <point x="0.161446" y="0.49916" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="8302622573891059">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8920969408569532" speed="5">
+                    <frame duration="1" hotspotX="0.501205" hotspotY="0.50084">
+                        <collision-poly>
+                            <point x="0.144578" y="0.10084" />
+                            <point x="0.498795" y="0.109244" />
+                            <point x="0.79759" y="0.141176" />
+                            <point x="0.93494" y="0.49916" />
+                            <point x="0.645783" y="0.752941" />
+                            <point x="0.498795" y="0.798319" />
+                            <point x="0.339759" y="0.763025" />
+                            <point x="0.0746988" y="0.49916" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="cocos" plugin-id="Sprite" sid="2269873864759446">
