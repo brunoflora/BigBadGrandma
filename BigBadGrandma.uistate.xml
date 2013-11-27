@@ -14,13 +14,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout>story</layout>
         <layout>menu</layout>
         <layout>levels</layout>
-        <layout active="1">gameplay</layout>
+        <layout>gameplay</layout>
         <layout>mechanics</layout>
         <event-sheet>intro</event-sheet>
         <event-sheet>menu</event-sheet>
         <event-sheet>levels</event-sheet>
         <event-sheet>story</event-sheet>
-        <event-sheet>gameplay</event-sheet>
+        <event-sheet active="1">gameplay</event-sheet>
         <event-sheet>mechanics</event-sheet>
     </open-tabs>
     <properties>
@@ -33,7 +33,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="cocos" />
         <family expanded="0" name="luvas" />
         <family expanded="0" name="stroball" />
-        <family expanded="0" name="famMaca" />
+        <family expanded="1" name="famMaca" />
         <family expanded="0" name="famAvela" />
         <family expanded="0" name="famMel" />
         <family expanded="0" name="famChoco" />

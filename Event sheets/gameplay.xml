@@ -435,10 +435,37 @@
                             <param id="0" name="Object to create">vovo</param>
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">640</param>
-                            <param id="3" name="Y">200</param>
+                            <param id="3" name="Y">250</param>
                         </action>
                     </actions>
                     <sub-events>
+                        <event-block sid="8408926872564997">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="1020530919486483" type="System">
+                                    <param id="0" name="First value">pontodochocolate.Chocolate</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="9519796312169693">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="4812596021198902" type="System">
+                                            <param id="0" name="Name">&quot;inibeVovo&quot;</param>
+                                            <param id="1" name="Start index">pontodochocolate.Chocolate</param>
+                                            <param id="2" name="End index">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="6440368915971698" type="pontodochocolate">
+                                            <param id="0" name="Instance variable">Chocolate</param>
+                                            <param id="1" name="Value">pontodochocolate.Chocolate</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                         <event-block sid="3214399581917679">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="1091658963965375" type="System">
@@ -461,8 +488,8 @@
                                         <action id="-3" name="Create object" sid="4501802238228733" type="System">
                                             <param id="0" name="Object to create">famMaca</param>
                                             <param id="1" name="Layer">1</param>
-                                            <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
-                                            <param id="3" name="Y">random(lobo.Y-150,lobo.Y+150)</param>
+                                            <param id="2" name="X">random(lobo.X-250,lobo.X+250)</param>
+                                            <param id="3" name="Y">random(lobo.Y-250,lobo.Y+250)</param>
                                         </action>
                                         <action id="-12" name="Subtract from" sid="3326645062936723" type="pontodamaca">
                                             <param id="0" name="Instance variable">Maca</param>
@@ -494,7 +521,7 @@
                                         <action id="-3" name="Create object" sid="4281948667200322" type="System">
                                             <param id="0" name="Object to create">famAvela</param>
                                             <param id="1" name="Layer">1</param>
-                                            <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
+                                            <param id="2" name="X">random(lobo.X-250,lobo.X+250)</param>
                                             <param id="3" name="Y">random(lobo.Y-150,lobo.Y+100)</param>
                                         </action>
                                         <action id="-12" name="Subtract from" sid="1380531812356214" type="pontodaavela">
@@ -527,7 +554,7 @@
                                         <action id="-3" name="Create object" sid="5995195261147974" type="System">
                                             <param id="0" name="Object to create">famMel</param>
                                             <param id="1" name="Layer">1</param>
-                                            <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
+                                            <param id="2" name="X">random(lobo.X-250,lobo.X+250)</param>
                                             <param id="3" name="Y">random(lobo.Y-150,lobo.Y+150)</param>
                                         </action>
                                         <action id="-12" name="Subtract from" sid="2183328748795886" type="pontodomel">
@@ -538,52 +565,9 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block disabled="1" sid="8408926872564997">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="1020530919486483" type="System">
-                                    <param id="0" name="First value">pontodochocolate.Chocolate</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block disabled="1" sid="9519796312169693">
-                                    <conditions>
-                                        <condition id="-10" name="For" sid="4812596021198902" type="System">
-                                            <param id="0" name="Name">&quot;inibeVovo&quot;</param>
-                                            <param id="1" name="Start index">pontodochocolate.Chocolate</param>
-                                            <param id="2" name="End index">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action disabled="1" id="-3" name="Create object" sid="41213953957742" type="System">
-                                            <param id="0" name="Object to create">famMel</param>
-                                            <param id="1" name="Layer">1</param>
-                                            <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
-                                            <param id="3" name="Y">random(lobo.Y-150,lobo.Y+150)</param>
-                                        </action>
-                                        <action id="-12" name="Subtract from" sid="6440368915971698" type="pontodochocolate">
-                                            <param id="0" name="Instance variable">Chocolate</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block disabled="1" sid="9084858654546607">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="2804295495629267" type="System">
-                                    <param id="0" name="First value">pontodochocolate.Chocolate</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                        </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="3145310491282811">
+                <event-block collapsed="1" sid="3145310491282811">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="8372229260228609" type="System">
                             <param id="0" name="First value">vovo.Tesao</param>
@@ -616,7 +600,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block disabled="1" sid="8940388022043759">
+                <event-block collapsed="1" disabled="1" sid="8940388022043759">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="4188405485289417" type="System">
                             <param id="0" name="First value">vovo.Tesao</param>
@@ -751,7 +735,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="7979352537898816" title="maca">
+        <event-group collapsed="1" description="" sid="7979352537898816" title="maca">
             <sub-events>
                 <event-block sid="8102724334789717">
                     <conditions>
@@ -797,20 +781,20 @@
                         <event-block sid="5553136029814463">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="854118781974909" type="System">
-                                    <param id="0" name="Interval (seconds)">5.0</param>
+                                    <param id="0" name="Interval (seconds)">6.0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="7298350725471837" type="famMaca" />
+                                <action id="-9" name="Destroy" sid="7298350725471837" type="maca" />
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" disabled="1" sid="8060990449276904" title="avela">
+        <event-group collapsed="1" description="" sid="8060990449276904" title="avela">
             <sub-events>
-                <event-block disabled="1" sid="7065112436800626">
+                <event-block sid="7065112436800626">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="2880640000507269" type="lobo">
                             <param id="0" name="Object">famAvela</param>
@@ -824,7 +808,7 @@
                         <action id="-9" name="Destroy" sid="7126210942262271" type="famAvela" />
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="2260782191076577">
+                <event-block sid="2260782191076577">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="860236161226411" type="System" />
                     </conditions>
@@ -834,10 +818,10 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="2140755315325584">
+                <event-block sid="2140755315325584">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="6249496714712241" type="System">
-                            <param id="0" name="Interval (seconds)">1.5</param>
+                            <param id="0" name="Interval (seconds)">2.0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -849,10 +833,10 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block disabled="1" sid="2068103999778439">
+                        <event-block sid="2068103999778439">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="9528964478169445" type="System">
-                                    <param id="0" name="Interval (seconds)">5.0</param>
+                                    <param id="0" name="Interval (seconds)">6.0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -863,9 +847,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" disabled="1" sid="4630967811662486" title="mel">
+        <event-group collapsed="1" description="" sid="4630967811662486" title="mel">
             <sub-events>
-                <event-block disabled="1" sid="4030881018829371">
+                <event-block sid="4030881018829371">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="7021529598068755" type="lobo">
                             <param id="0" name="Object">famMel</param>
@@ -879,7 +863,7 @@
                         <action id="-9" name="Destroy" sid="3068194191227916" type="famMel" />
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="4095981498371909">
+                <event-block sid="4095981498371909">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="784381984532222" type="System" />
                     </conditions>
@@ -889,10 +873,10 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="2793587708620474">
+                <event-block sid="2793587708620474">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="6307667049641503" type="System">
-                            <param id="0" name="Interval (seconds)">1.5</param>
+                            <param id="0" name="Interval (seconds)">3.0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -904,10 +888,10 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block disabled="1" sid="9634956380531529">
+                        <event-block sid="9634956380531529">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="569842494520392" type="System">
-                                    <param id="0" name="Interval (seconds)">5.0</param>
+                                    <param id="0" name="Interval (seconds)">6.0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -918,7 +902,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" disabled="1" sid="9062624244019905" title="chocolate">
+        <event-group collapsed="1" description="" sid="9062624244019905" title="chocolate">
             <sub-events>
                 <event-block sid="8857630853974725">
                     <conditions>
@@ -947,7 +931,7 @@
                 <event-block sid="9290079085091501">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="8158620172907388" type="System">
-                            <param id="0" name="Interval (seconds)">15.0</param>
+                            <param id="0" name="Interval (seconds)">10.0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -962,7 +946,7 @@
                         <event-block sid="6688857305906438">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="1278901709554671" type="System">
-                                    <param id="0" name="Interval (seconds)">17.0</param>
+                                    <param id="0" name="Interval (seconds)">15.0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -977,7 +961,7 @@
             <sub-events>
                 <event-group description="" sid="4677533963555962" title="Alucinado">
                     <sub-events>
-                        <event-block sid="1519130401099005">
+                        <event-block collapsed="1" sid="1519130401099005">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="6422574703706279" type="System">
                                     <param id="0" name="First value">lobo.StatusLobo</param>
@@ -1042,7 +1026,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="1046800972203377">
+                        <event-block collapsed="1" sid="1046800972203377">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="2271251836562049" type="System">
                                     <param id="0" name="First value">lobo.StatusLobo</param>

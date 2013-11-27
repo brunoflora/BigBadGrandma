@@ -563,18 +563,7 @@
         <object-type name="maca" sid="2210469349835863">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
-                <animation framecount="2" loop="1" name="maca" pingpong="0" repeatcount="1" repeatto="0" sid="5531298156545876" speed="2">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.24" y="0.24" />
-                            <point x="0.5" y="0.24" />
-                            <point x="0.6" y="0.4" />
-                            <point x="0.92" y="0.5" />
-                            <point x="0.78" y="0.78" />
-                            <point x="0.5" y="0.8" />
-                            <point x="0.3" y="0.7" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="1" loop="1" name="maca" pingpong="0" repeatcount="1" repeatto="0" sid="5531298156545876" speed="2">
                     <frame duration="1" hotspotX="0.504762" hotspotY="0.504762">
                         <collision-poly>
                             <point x="0.24" y="0.24" />
