@@ -10,6 +10,7 @@
     <unique-id>261muxfz1ad3y</unique-id>
     <saved-with-version>14600</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
@@ -48,7 +49,7 @@
         <prop name="Sampling">Point</prop>
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder expanded="0">
         <object-type name="Intro" sid="2166146210770709">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
@@ -1203,6 +1204,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Audio" sid="8211428939964075">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families>
         <family name="cocos" plugin-id="Sprite" sid="2269873864759446">
@@ -1246,7 +1250,7 @@
             </members>
         </family>
     </families>
-    <layout-folder expanded="1">
+    <layout-folder expanded="0">
         <layout>intro.xml</layout>
         <layout>story.xml</layout>
         <layout>menu.xml</layout>
@@ -1254,7 +1258,7 @@
         <layout>gameplay.xml</layout>
         <layout>mechanics.xml</layout>
     </layout-folder>
-    <event-folder expanded="1">
+    <event-folder expanded="0">
         <event-sheet>intro.xml</event-sheet>
         <event-sheet>story.xml</event-sheet>
         <event-sheet>menu.xml</event-sheet>
@@ -1270,8 +1274,27 @@
         </global-instance>
         <global-instance type="Keyboard" uid="10" />
         <global-instance type="Mouse" uid="11" />
+        <global-instance type="Audio" uid="53">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder expanded="1" />
+    <sounds-folder expanded="1">
+        <file name="pickup.m4a" />
+        <file name="pickup.ogg" />
+        <file name="pickup.wav" />
+    </sounds-folder>
     <music-folder expanded="1" />
     <files-folder expanded="0">
         <file-folder expanded="1" name="Icons">

@@ -744,6 +744,12 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="7107415544316979" type="famMaca" />
+                        <action id="0" name="Play" sid="4252696136375796" type="Audio">
+                            <param id="0" name="Audio file">pickup</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;pickup&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="6004855176759837">
@@ -759,7 +765,7 @@
                 <event-block sid="8806142618400488">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="1850075440861579" type="System">
-                            <param id="0" name="Interval (seconds)">1.5</param>
+                            <param id="0" name="Interval (seconds)">1.0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -799,6 +805,12 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="7126210942262271" type="famAvela" />
+                        <action id="0" name="Play" sid="8245280903688382" type="Audio">
+                            <param id="0" name="Audio file">pickup</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;pickup&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="2260782191076577">
@@ -854,6 +866,12 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="3068194191227916" type="famMel" />
+                        <action id="0" name="Play" sid="5157164693189807" type="Audio">
+                            <param id="0" name="Audio file">pickup</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;pickup&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4095981498371909">
@@ -869,7 +887,7 @@
                 <event-block sid="2793587708620474">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="6307667049641503" type="System">
-                            <param id="0" name="Interval (seconds)">1.5</param>
+                            <param id="0" name="Interval (seconds)">2.0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -954,7 +972,7 @@
             <sub-events>
                 <event-group description="" sid="4677533963555962" title="Alucinado">
                     <sub-events>
-                        <event-block sid="1519130401099005">
+                        <event-block collapsed="1" sid="1519130401099005">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="6422574703706279" type="System">
                                     <param id="0" name="First value">lobo.StatusLobo</param>
@@ -1019,7 +1037,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="1046800972203377">
+                        <event-block collapsed="1" sid="1046800972203377">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="2271251836562049" type="System">
                                     <param id="0" name="First value">lobo.StatusLobo</param>
