@@ -482,6 +482,7 @@
                         <Direction></Direction>
                         <StatusLobo>Normal</StatusLobo>
                         <Tempo>0</Tempo>
+                        <inibeLobo>0</inibeLobo>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">

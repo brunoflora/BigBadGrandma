@@ -125,6 +125,7 @@
                 <instance-variable name="Direction" sid="2399018292567617" type="string" />
                 <instance-variable name="StatusLobo" sid="3432771434705255" type="string" />
                 <instance-variable name="Tempo" sid="2862754902682049" type="number" />
+                <instance-variable name="inibeLobo" sid="7062719672170221" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="8045335838618861">
@@ -1324,7 +1325,7 @@
             </members>
         </family>
     </families>
-    <layout-folder expanded="0">
+    <layout-folder expanded="1">
         <layout>intro.xml</layout>
         <layout>story.xml</layout>
         <layout>menu.xml</layout>
@@ -1332,7 +1333,7 @@
         <layout>gameplay.xml</layout>
         <layout>mechanics.xml</layout>
     </layout-folder>
-    <event-folder expanded="0">
+    <event-folder expanded="1">
         <event-sheet>intro.xml</event-sheet>
         <event-sheet>story.xml</event-sheet>
         <event-sheet>menu.xml</event-sheet>
@@ -1364,7 +1365,7 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder expanded="1">
+    <sounds-folder expanded="0">
         <file name="mursh.m4a" />
         <file name="mursh.ogg" />
         <file name="mursh.wav" />
@@ -1381,7 +1382,10 @@
         <file name="powerup.ogg" />
         <file name="powerup.wav" />
     </sounds-folder>
-    <music-folder expanded="1" />
+    <music-folder expanded="1">
+        <file name="MattOglseby - 3.m4a" />
+        <file name="MattOglseby - 3.ogg" />
+    </music-folder>
     <files-folder expanded="0">
         <file-folder expanded="1" name="Icons">
             <file name="icon-16.png" />

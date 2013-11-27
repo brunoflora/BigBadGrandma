@@ -3,11 +3,18 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>gameplay</name>
     <events>
-        <event-block sid="8489916015327348">
+        <event-block sid="8395363202438821">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="6534972446924388" type="System" />
+                <condition id="-2" name="On start of layout" sid="4467346205139919" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="4567178005603911" type="Audio">
+                    <param id="0" name="Audio file">MattOglseby - 3</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-6</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
         </event-block>
         <event-group collapsed="1" description="" disabled="1" sid="5828690880390424" title="touch">
             <sub-events>
@@ -408,7 +415,7 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="9892087883965252" title="vovo">
+        <event-group collapsed="1" description="" sid="9892087883965252" title="vovo">
             <sub-events>
                 <event-block sid="8408926872564997">
                     <conditions>
@@ -747,7 +754,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="7979352537898816" title="maca">
+        <event-group collapsed="1" description="" sid="7979352537898816" title="maca">
             <sub-events>
                 <event-block sid="8102724334789717">
                     <conditions>
@@ -991,7 +998,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="7808370104234298" title="cogumelo">
+        <event-group collapsed="1" description="" sid="7808370104234298" title="cogumelo">
             <sub-events>
                 <event-group description="" sid="4677533963555962" title="Alucinado">
                     <sub-events>
@@ -1225,7 +1232,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-block sid="5022428552302158">
+                <event-block collapsed="1" sid="5022428552302158">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="1775683010010825" type="System">
                             <param id="0" name="Interval (seconds)">10.0</param>
