@@ -284,6 +284,42 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="3" loop="0" name="inibeVovo" pingpong="0" repeatcount="1" repeatto="0" sid="8267907057720941" speed="5">
+                    <frame duration="1" hotspotX="0.50152" hotspotY="0.50101">
+                        <collision-poly>
+                            <point x="0.156177" y="0.112605" />
+                            <point x="0.7669" y="0.168067" />
+                            <point x="0.664336" y="0.49916" />
+                            <point x="0.675991" y="0.766387" />
+                            <point x="0.498834" y="0.870588" />
+                            <point x="0.317016" y="0.771429" />
+                            <point x="0.013986" y="0.49916" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501166" hotspotY="0.50084">
+                        <collision-poly>
+                            <point x="0.156177" y="0.112605" />
+                            <point x="0.7669" y="0.168067" />
+                            <point x="0.664336" y="0.49916" />
+                            <point x="0.675991" y="0.766387" />
+                            <point x="0.498834" y="0.858824" />
+                            <point x="0.317016" y="0.771429" />
+                            <point x="0.013986" y="0.49916" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50152" hotspotY="0.50101">
+                        <collision-poly>
+                            <point x="0.149184" y="0.107563" />
+                            <point x="0.498834" y="0.141176" />
+                            <point x="0.808858" y="0.137815" />
+                            <point x="0.710956" y="0.49916" />
+                            <point x="0.631702" y="0.734454" />
+                            <point x="0.498834" y="0.803361" />
+                            <point x="0.331002" y="0.761345" />
+                            <point x="0.0606061" y="0.49916" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="vovo" sid="7537293421111907">
