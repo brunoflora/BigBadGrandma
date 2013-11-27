@@ -3,6 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>gameplay</name>
     <events>
+        <event-block sid="8489916015327348">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6534972446924388" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
         <event-group collapsed="1" description="" disabled="1" sid="5828690880390424" title="touch">
             <sub-events>
                 <event-block disabled="1" sid="6879489736132357">
@@ -402,9 +408,9 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="9892087883965252" title="vovo">
+        <event-group description="" sid="9892087883965252" title="vovo">
             <sub-events>
-                <event-block collapsed="1" sid="8408926872564997">
+                <event-block sid="8408926872564997">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="1020530919486483" type="System">
                             <param id="0" name="First value">pontodochocolate.Chocolate</param>
@@ -433,7 +439,7 @@
                                     <actions>
                                         <action id="-12" name="Subtract from" sid="6440368915971698" type="pontodochocolate">
                                             <param id="0" name="Instance variable">Chocolate</param>
-                                            <param id="1" name="Value">1</param>
+                                            <param id="1" name="Value">pontodochocolate.Chocolate</param>
                                         </action>
                                         <action id="-13" name="Set boolean" sid="5741664845086943" type="vovo">
                                             <param id="0" name="Instance variable">Tesao</param>
@@ -463,7 +469,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block collapsed="1" sid="9084858654546607">
+                <event-block sid="9084858654546607">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="2804295495629267" type="System">
                             <param id="0" name="First value">pontodochocolate.Chocolate</param>
@@ -756,7 +762,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="7107415544316979" type="famMaca" />
-                        <action id="0" name="Play" sid="4252696136375796" type="Audio">
+                        <action id="0" name="Play" sid="8527792998315757" type="Audio">
                             <param id="0" name="Audio file">pickup</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
@@ -817,7 +823,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="7126210942262271" type="famAvela" />
-                        <action id="0" name="Play" sid="8245280903688382" type="Audio">
+                        <action id="0" name="Play" sid="1718213561431172" type="Audio">
                             <param id="0" name="Audio file">pickup</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
@@ -878,7 +884,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="3068194191227916" type="famMel" />
-                        <action id="0" name="Play" sid="5157164693189807" type="Audio">
+                        <action id="0" name="Play" sid="7844818031412323" type="Audio">
                             <param id="0" name="Audio file">pickup</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
@@ -925,7 +931,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="9062624244019905" title="chocolate">
+        <event-group description="" sid="9062624244019905" title="chocolate">
             <sub-events>
                 <event-block sid="8857630853974725">
                     <conditions>
@@ -939,7 +945,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="9011343882600186" type="famChoco" />
-                        <action id="0" name="Play" sid="7028668155304576" type="Audio">
+                        <action id="0" name="Play" sid="625357627896789" type="Audio">
                             <param id="0" name="Audio file">powerup</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
