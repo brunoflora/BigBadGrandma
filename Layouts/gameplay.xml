@@ -108,8 +108,8 @@
                         <x>445</x>
                         <y>986</y>
                         <z>0</z>
-                        <width>140</width>
-                        <height>60</height>
+                        <width>100</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -130,8 +130,8 @@
                         <x>580</x>
                         <y>986</y>
                         <z>0</z>
-                        <width>140</width>
-                        <height>60</height>
+                        <width>100</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -152,8 +152,8 @@
                         <x>715</x>
                         <y>986</y>
                         <z>0</z>
-                        <width>140</width>
-                        <height>60</height>
+                        <width>100</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -247,11 +247,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>867.000183105</x>
-                        <y>-79.152526855</y>
+                        <x>879.50012207</x>
+                        <y>-92.099754333</y>
                         <z>0</z>
-                        <width>53.06911087</width>
-                        <height>54.777626038</height>
+                        <width>78.155914307</width>
+                        <height>80.672073364</height>
                         <depth>0</depth>
                         <hotspotX>0.498266459</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -536,7 +536,7 @@
             <instances>
                 <instance type="pontodamaca" uid="23">
                     <properties>
-                        <text>000</text>
+                        <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial Rounded MT Bold,-24,400,0</font>
                         <color>255,255,255</color>
@@ -552,8 +552,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>456</x>
-                        <y>987</y>
+                        <x>445</x>
+                        <y>981</y>
                         <z>0</z>
                         <width>60</width>
                         <height>30</height>
@@ -566,7 +566,7 @@
                 </instance>
                 <instance type="pontodaavela" uid="29">
                     <properties>
-                        <text>000</text>
+                        <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial Rounded MT Bold,-24,400,0</font>
                         <color>255,255,255</color>
@@ -582,8 +582,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>591</x>
-                        <y>987</y>
+                        <x>580</x>
+                        <y>981</y>
                         <z>0</z>
                         <width>60</width>
                         <height>30</height>
@@ -596,7 +596,7 @@
                 </instance>
                 <instance type="pontodomel" uid="37">
                     <properties>
-                        <text>000</text>
+                        <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial Rounded MT Bold,-24,400,0</font>
                         <color>255,255,255</color>
@@ -612,8 +612,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>726</x>
-                        <y>987</y>
+                        <x>715</x>
+                        <y>981</y>
                         <z>0</z>
                         <width>60</width>
                         <height>30</height>
