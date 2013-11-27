@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>story</name>
+    <events>
+        <event-block sid="4373300084759006">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="325744504593071" type="Mouse">
+                    <param id="0" name="Object">skip</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4952126235737479" type="skip">
+                    <param id="0" name="Animation">&quot;skip2&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7678420851787515">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="7931023091236558" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">skip</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="2261044681981015" type="System">
+                            <param id="0" name="Layout">mechanics</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3376253199072696">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="4117752022626139" type="Mouse">
+                    <param id="0" name="Object">skip</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9318433430390918" type="skip">
+                    <param id="0" name="Animation">&quot;skip1&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
