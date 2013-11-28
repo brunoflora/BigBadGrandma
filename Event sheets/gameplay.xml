@@ -537,7 +537,7 @@
                                             <actions>
                                                 <action id="-3" name="Create object" sid="4501802238228733" type="System">
                                                     <param id="0" name="Object to create">famMaca</param>
-                                                    <param id="1" name="Layer">1</param>
+                                                    <param id="1" name="Layer">0</param>
                                                     <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
                                                     <param id="3" name="Y">random(lobo.Y-150,lobo.Y+150)</param>
                                                 </action>
@@ -570,7 +570,7 @@
                                             <actions>
                                                 <action id="-3" name="Create object" sid="4281948667200322" type="System">
                                                     <param id="0" name="Object to create">famAvela</param>
-                                                    <param id="1" name="Layer">1</param>
+                                                    <param id="1" name="Layer">0</param>
                                                     <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
                                                     <param id="3" name="Y">random(lobo.Y-150,lobo.Y+100)</param>
                                                 </action>
@@ -603,7 +603,7 @@
                                             <actions>
                                                 <action id="-3" name="Create object" sid="5995195261147974" type="System">
                                                     <param id="0" name="Object to create">famMel</param>
-                                                    <param id="1" name="Layer">1</param>
+                                                    <param id="1" name="Layer">0</param>
                                                     <param id="2" name="X">random(lobo.X-150,lobo.X+150)</param>
                                                     <param id="3" name="Y">random(lobo.Y-150,lobo.Y+150)</param>
                                                 </action>
@@ -795,7 +795,7 @@
                     <actions>
                         <action id="-3" name="Create object" sid="3741056928446577" type="System">
                             <param id="0" name="Object to create">famMaca</param>
-                            <param id="1" name="Layer">1</param>
+                            <param id="1" name="Layer">0</param>
                             <param id="2" name="X">random(30,1250)</param>
                             <param id="3" name="Y">random(250,924)</param>
                         </action>
@@ -856,7 +856,7 @@
                     <actions>
                         <action id="-3" name="Create object" sid="1959831473863781" type="System">
                             <param id="0" name="Object to create">famAvela</param>
-                            <param id="1" name="Layer">1</param>
+                            <param id="1" name="Layer">0</param>
                             <param id="2" name="X">random(30,1250)</param>
                             <param id="3" name="Y">random(250,924)</param>
                         </action>
@@ -917,7 +917,7 @@
                     <actions>
                         <action id="-3" name="Create object" sid="5271036722173157" type="System">
                             <param id="0" name="Object to create">famMel</param>
-                            <param id="1" name="Layer">1</param>
+                            <param id="1" name="Layer">0</param>
                             <param id="2" name="X">random(30,1250)</param>
                             <param id="3" name="Y">random(250,924)</param>
                         </action>
@@ -978,7 +978,7 @@
                     <actions>
                         <action id="-3" name="Create object" sid="87819977119026" type="System">
                             <param id="0" name="Object to create">famChoco</param>
-                            <param id="1" name="Layer">1</param>
+                            <param id="1" name="Layer">0</param>
                             <param id="2" name="X">random(30,1250)</param>
                             <param id="3" name="Y">random(250,924)</param>
                         </action>
@@ -1241,7 +1241,7 @@
                     <actions>
                         <action id="-3" name="Create object" sid="550289446415006" type="System">
                             <param id="0" name="Object to create">famCogu</param>
-                            <param id="1" name="Layer">1</param>
+                            <param id="1" name="Layer">0</param>
                             <param id="2" name="X">random(30,1250)</param>
                             <param id="3" name="Y">random(250,924)</param>
                         </action>
